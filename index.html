@@ -245,15 +245,31 @@ function setStatus(t){ document.getElementById('status').textContent = t; }
 
 function fit(obj, key){
   box = new THREE.Box3().setFromObject(obj);
-  // 动画模型：用 framing.js 里按整段动画包络算好的框，而不是绑定姿态的框。
-  // 起因：登场动画会把模型从画面外落到地面（安尼希利奥 y 走了 150），
-  // 战败动画会把环状部件炸散（莉贝雷利奥包络 92×369×399，绑定只有 24×33×14）。
-  // 按绑定姿态定的镜头，GIF 后半段只剩背景。
+  // 动画模型：用 framing.js 里算好的框，而不是加载那一刻（= 绑定姿态）的包围盒。
+  //
+  // 这里用 bind（模型本体），**不用** union（整段动画的并集）。
+  // 踩过的坑：战败动画会把环状部件炸飞到 z≈-148、升到 y≈78，
+  // 并集框的中心整个被拖走 —— 相机跟着盯到一百多米外，
+  // 而第 0 帧的模型还在原点，结果主体只占画面一小块还偏在一角。
+  // 交互查看就该像游戏里一样：镜头对着角色本体，动画自己飞出去是演出的一部分。
+  // union 只用来兜住 far，免得飞远的碎屑被裁掉。
   const fr = window.__FRAMING && window.__FRAMING[key];
-  if(fr && fr.union && fr.union.center && fr.union.size){
-    const c = new THREE.Vector3().fromArray(fr.union.center);
-    const s = new THREE.Vector3().fromArray(fr.union.size);
-    box.setFromCenterAndSize(c, s);
+  let farR = 0;
+  if(fr && fr.union && fr.union.size){
+    farR = Math.max(fr.union.size[0], fr.union.size[1], fr.union.size[2]);
+  }
+  if(fr && fr.bind && fr.bind.center){
+    // bind.size 是绑定姿态的真实包围盒三边（不是稳健分位数），刚好把模型完整包住。
+    // 中心取「第 0 帧」的：登场动画首帧模型在天上（安尼希利奥 y≈136），
+    // 而绑定姿态在地面（y≈15）—— 用 bind 的中心会看到一片空画面。
+    // 用首帧中心 + 本体尺寸，进页面就能看清角色，之后它自己飞走/落下属于演出。
+    const sz = fr.bind.size
+      ? new THREE.Vector3().fromArray(fr.bind.size)
+      : new THREE.Vector3().setScalar(Math.max((fr.bind.radius || 1) * 2, 1));
+    const c = (fr.track && fr.track[0])
+      ? new THREE.Vector3(fr.track[0][0], fr.track[0][1], fr.track[0][2])
+      : new THREE.Vector3().fromArray(fr.bind.center);
+    box.setFromCenterAndSize(c, sz);
   }
   const c = box.getCenter(new THREE.Vector3());
   const s = box.getSize(new THREE.Vector3());
@@ -263,7 +279,7 @@ function fit(obj, key){
   homePos = new THREE.Vector3(c.x, c.y, c.z + dist);
   camera.position.copy(homePos);
   camera.near = Math.max(r/1000, 0.01);
-  camera.far = r * 50;
+  camera.far = Math.max(r * 50, farR * 10);
   camera.updateProjectionMatrix();
   controls.target.copy(c);
   controls.update();
