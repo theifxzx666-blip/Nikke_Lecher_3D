@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>莱彻 3D 查看器 · 47/48 章关底 BOSS</title>
+<title>莱彻 3D 查看器 · 47–50 章关底 BOSS</title>
 <style>
   :root{
     --bg:#0e1116; --panel:#161b22; --line:#2a323d; --fg:#e6edf3;
@@ -28,6 +28,10 @@
   button:hover{background:#26303c;border-color:#3a4553}
   button.on{background:var(--acc);border-color:var(--acc);color:#04101f;font-weight:600}
   button:disabled{opacity:.4;cursor:not-allowed}
+  /* BOSS 按钮里的章号小字（四个 BOSS 跨两期，必须标清楚） */
+  #bossSeg button i{display:block;font-style:normal;font-size:10px;
+    color:var(--dim);margin-top:1px;letter-spacing:.3px}
+  #bossSeg button.on i{color:rgba(4,16,31,.68)}
   .row{display:flex;align-items:center;gap:8px;margin-top:8px}
   input[type=range]{flex:1;accent-color:var(--acc)}
   .val{font-variant-numeric:tabular-nums;color:var(--dim);min-width:38px;text-align:right}
@@ -75,13 +79,15 @@
 
 <div id="hud">
   <h1>莱彻 3D 查看器</h1>
-  <div class="sub">47 / 48 章关底 BOSS · 带骨骼动画</div>
+  <div class="sub">47 – 50 章关底 BOSS · 带骨骼动画</div>
 
   <div class="grp">
     <label>BOSS</label>
     <div class="seg" id="bossSeg">
-      <button data-boss="xba003" class="on">安尼希利奥</button>
-      <button data-boss="eba002">莉贝雷利奥</button>
+      <button data-boss="xba003" class="on">安尼希利奥<i>47 章</i></button>
+      <button data-boss="eba002">莉贝雷利奥躯体<i>48 章</i></button>
+      <button data-boss="xbg006_anmi">胜利女神<i>49 章</i></button>
+      <button data-boss="xba004_dmtr">怀旧<i>50 章</i></button>
     </div>
   </div>
 
@@ -89,7 +95,7 @@
     <label>阶段</label>
     <div class="seg" id="phaseSeg">
       <button data-phase="1phase" class="on">1 阶段</button>
-      <button data-phase="2phase" class="on">2 阶段</button>
+      <button data-phase="2phase">2 阶段</button>
     </div>
   </div>
 
@@ -189,16 +195,19 @@ import { GLTFLoader } from './vendor/GLTFLoader.js';
 import { OrbitControls } from './vendor/OrbitControls.js';
 import { exportGif, planFrames } from './gif-export.js';
 
+// 2:null = 单形态 BOSS（没有 2 阶段变体根），阶段按钮会自动置灰
 const MODELS = {
-  xba003: { name:'安尼希利奥', 1:'./models/xba003_1phase.glb', 2:'./models/xba003_2phase.glb' },
-  eba002: { name:'莉贝雷利奥躯体', 1:'./models/eba002_1phase.glb', 2:'./models/eba002_2phase.glb' },
+  xba003:      { name:'安尼希利奥',     1:'./models/xba003_1phase.glb',          2:'./models/xba003_2phase.glb' },
+  eba002:      { name:'莉贝雷利奥躯体', 1:'./models/eba002_1phase.glb',          2:'./models/eba002_2phase.glb' },
+  xbg006_anmi: { name:'胜利女神',       1:'./models/xbg006_anmi_1phase.glb',     2:'./models/xbg006_anmi_2phase.glb' },
+  xba004_dmtr: { name:'怀旧',           1:'./models/xba004_dmtr.glb',           2:null },
 };
 
 const state = { boss:'xba003', phase:1, playing:false, speed:1, autorot:false, wire:false, dark:true, suspend:false,
-                glb:null, title:null };
+                glb:null, title:null, zoom:null };
 
-// URL 参数：?boss=eba002&phase=2&play=1&t=1.2&rot=1&bg=light&wire=1
-// 任意 glb：?glb=xba003_2phase_death.glb&title=安尼希利奥_2阶段_战败
+// URL 参数：?boss=xbg006_anmi&phase=2&play=1&t=1.2&rot=1&bg=light&wire=1&zoom=1.02
+// 任意 glb：?glb=xbg006_anmi_2phase_dead.glb&title=胜利女神_2阶段_战败
 //   表演动画（登场 / groggy / 战败）与 idle 的网格相同、只有 AnimationClip 不同，
 //   一条动画一个 glb，所以不能再按 boss+phase 取文件，得能直接点名。
 (function(){
@@ -211,6 +220,7 @@ const state = { boss:'xba003', phase:1, playing:false, speed:1, autorot:false, w
   state.autorot = q.get('rot') === '1';
   state.wire    = q.get('wire') === '1';
   state.dark    = q.get('bg') !== 'light';
+  if(q.get('zoom')) state.zoom = parseFloat(q.get('zoom')) || 1.35;
   state.seek    = q.has('t') ? parseFloat(q.get('t')) : null;
   // ui=0：隐藏左侧面板与状态栏，只留模型，方便截图
   if(q.get('ui') === '0'){
@@ -274,7 +284,8 @@ function fit(obj, key){
   const c = box.getCenter(new THREE.Vector3());
   const s = box.getSize(new THREE.Vector3());
   const r = Math.max(s.x, s.y, s.z);
-  const dist = r / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov/2))) * 1.35;
+  // zoom 默认 1.35（先例留白口径）；出图文时用 ?zoom=1.02 让主体更满
+  const dist = r / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov/2))) * (state.zoom || 1.35);
   homeTarget = c.clone();
   homePos = new THREE.Vector3(c.x, c.y, c.z + dist);
   camera.position.copy(homePos);
@@ -330,7 +341,8 @@ function buildPartList(obj){
 }
 
 function modelUrl(){
-  return state.glb ? './models/' + state.glb : MODELS[state.boss][state.phase];
+  if(state.glb) return './models/' + state.glb;
+  return MODELS[state.boss][state.phase] || MODELS[state.boss][1];
 }
 
 function load(){
@@ -407,8 +419,12 @@ function load(){
 function syncUI(){
   document.querySelectorAll('#bossSeg button').forEach(b=>
     b.classList.toggle('on', b.dataset.boss === state.boss));
-  document.querySelectorAll('#phaseSeg button').forEach(b=>
-    b.classList.toggle('on', b.dataset.phase === (state.phase===1?'1phase':'2phase')));
+  // 单形态 BOSS（怀旧 xba004_dmtr）没有 2 阶段：置灰，否则点下去是 404
+  const has2 = !!MODELS[state.boss][2];
+  document.querySelectorAll('#phaseSeg button').forEach(b=>{
+    b.disabled = (b.dataset.phase === '2phase' && !has2);
+    b.classList.toggle('on', b.dataset.phase === (state.phase===1?'1phase':'2phase'));
+  });
 
   const pb = document.getElementById('play');
   if(action){
@@ -440,6 +456,7 @@ function syncUI(){
 document.getElementById('bossSeg').addEventListener('click', (e)=>{
   const b = e.target.dataset.boss; if(!b) return;
   state.boss = b; state.glb = null; state.title = null;   // 手动切 boss 就退出「点名 glb」模式
+  if(state.phase === 2 && !MODELS[b][2]) state.phase = 1; // 该 BOSS 只有 1 阶段
   [...e.currentTarget.children].forEach(x=>x.classList.toggle('on', x.dataset.boss===b));
   load();
 });
