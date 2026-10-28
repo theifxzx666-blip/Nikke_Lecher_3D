@@ -1,0 +1,716 @@
+{
+ "bba001": {
+  "name": "母鲸 [P.S.I.D.]",
+  "camp": "P.S.I.D.",
+  "variants": [
+   {
+    "file": "bba001.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 2.95,
+    "url": "./models/bba001.glb"
+   }
+  ]
+ },
+ "bba001_zeus": {
+  "name": "母鲸 [Z.E.U.S.]",
+  "camp": "Z.E.U.S.",
+  "variants": [
+   {
+    "file": "bba001_zeus.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 2.95,
+    "url": "./models/bba001_zeus.glb"
+   }
+  ]
+ },
+ "bbg001": {
+  "name": "死神",
+  "camp": "",
+  "variants": [
+   {
+    "file": "bbg001.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.46,
+    "url": "./models/bbg001.glb"
+   }
+  ]
+ },
+ "bbg002": {
+  "name": "嚣嘈",
+  "camp": "",
+  "variants": [
+   {
+    "file": "bbg002.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 2.02,
+    "url": "./models/bbg002.glb"
+   }
+  ]
+ },
+ "bbg003": {
+  "name": "铁匠",
+  "camp": "",
+  "variants": [
+   {
+    "file": "bbg003.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.99,
+    "url": "./models/bbg003.glb"
+   }
+  ]
+ },
+ "bbg004_dmtr": {
+  "name": "克拉肯 [D.M.T.R.]",
+  "camp": "D.M.T.R.",
+  "variants": [
+   {
+    "file": "bbg004_dmtr.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.5,
+    "url": "./models/bbg004_dmtr.glb"
+   }
+  ]
+ },
+ "bbg004_psid": {
+  "name": "克拉肯 [P.S.I.D.]",
+  "camp": "P.S.I.D.",
+  "variants": [
+   {
+    "file": "bbg004_psid.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.48,
+    "url": "./models/bbg004_psid.glb"
+   }
+  ]
+ },
+ "bbg004_zeus": {
+  "name": "克拉肯 [Z.E.U.S.]",
+  "camp": "Z.E.U.S.",
+  "variants": [
+   {
+    "file": "bbg004_zeus.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.48,
+    "url": "./models/bbg004_zeus.glb"
+   }
+  ]
+ },
+ "bbg006": {
+  "name": "过激派 [Z.E.U.S.]",
+  "camp": "Z.E.U.S.",
+  "variants": [
+   {
+    "file": "bbg006.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.86,
+    "url": "./models/bbg006.glb"
+   }
+  ]
+ },
+ "bbg006_hsta": {
+  "name": "过激派 [H.S.T.A.]",
+  "camp": "H.S.T.A.",
+  "variants": [
+   {
+    "file": "bbg006_hsta.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.86,
+    "url": "./models/bbg006_hsta.glb"
+   }
+  ]
+ },
+ "bbg006_zeus": {
+  "name": "过激派 [Z.E.U.S.]",
+  "camp": "Z.E.U.S.",
+  "variants": [
+   {
+    "file": "bbg006_zeus.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.86,
+    "url": "./models/bbg006_zeus.glb"
+   }
+  ]
+ },
+ "bbg008_hsta": {
+  "name": "黑蛇 [H.S.T.A.]",
+  "camp": "H.S.T.A.",
+  "variants": [
+   {
+    "file": "bbg008_hsta.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.98,
+    "url": "./models/bbg008_hsta.glb"
+   }
+  ]
+ },
+ "bbg009_anmi": {
+  "name": "饕餮 [A.N.M.I.]",
+  "camp": "A.N.M.I.",
+  "variants": [
+   {
+    "file": "bbg009_anmi.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 2.7,
+    "url": "./models/bbg009_anmi.glb"
+   }
+  ]
+ },
+ "eba001": {
+  "name": "岚灾",
+  "camp": "",
+  "variants": [
+   {
+    "file": "eba001.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.02,
+    "url": "./models/eba001.glb"
+   }
+  ]
+ },
+ "eba001_anmi": {
+  "name": "岚灾 [A.N.M.I.]",
+  "camp": "A.N.M.I.",
+  "variants": [
+   {
+    "file": "eba001_anmi.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.68,
+    "url": "./models/eba001_anmi.glb"
+   }
+  ]
+ },
+ "eba002_hsta": {
+  "name": "莉贝雷利奥躯体 [H.S.T.A.]",
+  "camp": "H.S.T.A.",
+  "variants": [
+   {
+    "file": "eba002_hsta__eba002_1phase.glb",
+    "label": "1 阶段",
+    "kind": "static",
+    "size": 3.07,
+    "url": "./models/eba002_hsta__eba002_1phase.glb"
+   },
+   {
+    "file": "eba002_hsta__idle_1phase.glb",
+    "label": "1 阶段 · idle",
+    "kind": "idle",
+    "size": 4.03,
+    "url": "./models/eba002_hsta__idle_1phase.glb"
+   },
+   {
+    "file": "eba002_hsta__eba002_2phase.glb",
+    "label": "2 阶段",
+    "kind": "static",
+    "size": 2.61,
+    "url": "./models/eba002_hsta__eba002_2phase.glb"
+   },
+   {
+    "file": "eba002_hsta__idle_2phase.glb",
+    "label": "2 阶段 · idle",
+    "kind": "idle",
+    "size": 3.22,
+    "url": "./models/eba002_hsta__idle_2phase.glb"
+   }
+  ]
+ },
+ "eba003": {
+  "name": "捍卫者 [A.N.M.I.]",
+  "camp": "A.N.M.I.",
+  "variants": [
+   {
+    "file": "eba003.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.11,
+    "url": "./models/eba003.glb"
+   }
+  ]
+ },
+ "eba003_dmtr": {
+  "name": "捍卫者 [D.M.T.R.]",
+  "camp": "D.M.T.R.",
+  "variants": [
+   {
+    "file": "eba003_dmtr.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 5.12,
+    "url": "./models/eba003_dmtr.glb"
+   }
+  ]
+ },
+ "eba003_hsta": {
+  "name": "捍卫者 [H.S.T.A.]",
+  "camp": "H.S.T.A.",
+  "variants": [
+   {
+    "file": "eba003_hsta.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 5.11,
+    "url": "./models/eba003_hsta.glb"
+   }
+  ]
+ },
+ "eba003_psid": {
+  "name": "捍卫者 [P.S.I.D.]",
+  "camp": "P.S.I.D.",
+  "variants": [
+   {
+    "file": "eba003_psid.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.41,
+    "url": "./models/eba003_psid.glb"
+   }
+  ]
+ },
+ "eba003_zeus": {
+  "name": "捍卫者 [Z.E.U.S.]",
+  "camp": "Z.E.U.S.",
+  "variants": [
+   {
+    "file": "eba003_zeus.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.42,
+    "url": "./models/eba003_zeus.glb"
+   }
+  ]
+ },
+ "eba004": {
+  "name": "巨大质量体 [A.N.M.I.]",
+  "camp": "A.N.M.I.",
+  "variants": [
+   {
+    "file": "eba004.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 1.94,
+    "url": "./models/eba004.glb"
+   }
+  ]
+ },
+ "eba004_dmtr": {
+  "name": "巨大质量体Q [D.M.T.R.]",
+  "camp": "D.M.T.R.",
+  "variants": [
+   {
+    "file": "eba004_dmtr.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 1.95,
+    "url": "./models/eba004_dmtr.glb"
+   }
+  ]
+ },
+ "eba005_anmi": {
+  "name": "席兹 [A.N.M.I.]",
+  "camp": "A.N.M.I.",
+  "variants": [
+   {
+    "file": "eba005_anmi.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.99,
+    "url": "./models/eba005_anmi.glb"
+   }
+  ]
+ },
+ "ebg001": {
+  "name": "噬天",
+  "camp": "",
+  "variants": [
+   {
+    "file": "ebg001.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.87,
+    "url": "./models/ebg001.glb"
+   }
+  ]
+ },
+ "ebg001_hsta": {
+  "name": "噬天 [H.S.T.A.]",
+  "camp": "H.S.T.A.",
+  "variants": [
+   {
+    "file": "ebg001_hsta.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.87,
+    "url": "./models/ebg001_hsta.glb"
+   }
+  ]
+ },
+ "ebg002": {
+  "name": "秘材H",
+  "camp": "",
+  "variants": [
+   {
+    "file": "ebg002.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.94,
+    "url": "./models/ebg002.glb"
+   }
+  ]
+ },
+ "ebg002_dmtr": {
+  "name": "秘材H [D.M.T.R.]",
+  "camp": "D.M.T.R.",
+  "variants": [
+   {
+    "file": "ebg002_dmtr.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.87,
+    "url": "./models/ebg002_dmtr.glb"
+   }
+  ]
+ },
+ "ebg002_hsta": {
+  "name": "秘材H [H.S.T.A.]",
+  "camp": "H.S.T.A.",
+  "variants": [
+   {
+    "file": "ebg002_hsta.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.69,
+    "url": "./models/ebg002_hsta.glb"
+   }
+  ]
+ },
+ "ebg003": {
+  "name": "茵迪维利亚 [Z.E.U.S.]",
+  "camp": "Z.E.U.S.",
+  "variants": [
+   {
+    "file": "ebg003.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 6.59,
+    "url": "./models/ebg003.glb"
+   }
+  ]
+ },
+ "mba002": {
+  "name": "尼希利斯塔 [H.S.T.A.]",
+  "camp": "H.S.T.A.",
+  "variants": [
+   {
+    "file": "mba002.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.87,
+    "url": "./models/mba002.glb"
+   }
+  ]
+ },
+ "mbg001": {
+  "name": "古铁",
+  "camp": "",
+  "variants": [
+   {
+    "file": "mbg001.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.56,
+    "url": "./models/mbg001.glb"
+   }
+  ]
+ },
+ "mbg001_psid": {
+  "name": "古铁 [P.S.I.D.]",
+  "camp": "P.S.I.D.",
+  "variants": [
+   {
+    "file": "mbg001_psid.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.37,
+    "url": "./models/mbg001_psid.glb"
+   }
+  ]
+ },
+ "mbg002": {
+  "name": "掘墓",
+  "camp": "",
+  "variants": [
+   {
+    "file": "mbg002.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.99,
+    "url": "./models/mbg002.glb"
+   }
+  ]
+ },
+ "mbg003_psid": {
+  "name": "贝西摩斯 [P.S.I.D.]",
+  "camp": "P.S.I.D.",
+  "variants": [
+   {
+    "file": "mbg003_psid__mbg003_1phase.glb",
+    "label": "1 阶段",
+    "kind": "static",
+    "size": 3.62,
+    "url": "./models/mbg003_psid__mbg003_1phase.glb"
+   },
+   {
+    "file": "mbg003_psid__mbg003_2phase.glb",
+    "label": "2 阶段",
+    "kind": "static",
+    "size": 4.19,
+    "url": "./models/mbg003_psid__mbg003_2phase.glb"
+   }
+  ]
+ },
+ "mbg004": {
+  "name": "神罚",
+  "camp": "",
+  "variants": [
+   {
+    "file": "mbg004.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.1,
+    "url": "./models/mbg004.glb"
+   }
+  ]
+ },
+ "mbg004_anmi": {
+  "name": "神罚 [A.N.M.I.]",
+  "camp": "A.N.M.I.",
+  "variants": [
+   {
+    "file": "mbg004_anmi.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.34,
+    "url": "./models/mbg004_anmi.glb"
+   }
+  ]
+ },
+ "xba001": {
+  "name": "镜像容器 [P.S.I.D.]",
+  "camp": "P.S.I.D.",
+  "variants": [
+   {
+    "file": "xba001.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.46,
+    "url": "./models/xba001.glb"
+   }
+  ]
+ },
+ "xba002_dmtr": {
+  "name": "女王001 [D.M.T.R.]",
+  "camp": "D.M.T.R.",
+  "variants": [
+   {
+    "file": "xba002_dmtr.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.43,
+    "url": "./models/xba002_dmtr.glb"
+   }
+  ]
+ },
+ "xba003_dmtr": {
+  "name": "安尼希利奥 [D.M.T.R.]",
+  "camp": "D.M.T.R.",
+  "variants": [
+   {
+    "file": "xba003_dmtr__xba003_1phase.glb",
+    "label": "1 阶段",
+    "kind": "static",
+    "size": 1.43,
+    "url": "./models/xba003_dmtr__xba003_1phase.glb"
+   },
+   {
+    "file": "xba003_dmtr__idle_1phase.glb",
+    "label": "1 阶段 · idle",
+    "kind": "idle",
+    "size": 1.81,
+    "url": "./models/xba003_dmtr__idle_1phase.glb"
+   },
+   {
+    "file": "xba003_dmtr__xbga03_2phase.glb",
+    "label": "2 阶段",
+    "kind": "static",
+    "size": 4.52,
+    "url": "./models/xba003_dmtr__xbga03_2phase.glb"
+   },
+   {
+    "file": "xba003_dmtr__idle_2phase.glb",
+    "label": "2 阶段 · idle",
+    "kind": "idle",
+    "size": 5.39,
+    "url": "./models/xba003_dmtr__idle_2phase.glb"
+   }
+  ]
+ },
+ "xba004_dmtr": {
+  "name": "怀旧",
+  "camp": "D.M.T.R.",
+  "variants": [
+   {
+    "file": "xba004_dmtr.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.04,
+    "url": "./models/xba004_dmtr.glb"
+   },
+   {
+    "file": "xba004_dmtr__idle_main.glb",
+    "label": "整体 · idle",
+    "kind": "idle",
+    "size": 4.83,
+    "url": "./models/xba004_dmtr__idle_main.glb"
+   }
+  ]
+ },
+ "xbg001_anmi": {
+  "name": "水晶洞穴 [A.N.M.I.]",
+  "camp": "A.N.M.I.",
+  "variants": [
+   {
+    "file": "xbg001_anmi.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.69,
+    "url": "./models/xbg001_anmi.glb"
+   }
+  ]
+ },
+ "xbg001_psid": {
+  "name": "水晶洞穴[P.S.I.D.]",
+  "camp": "P.S.I.D.",
+  "variants": [
+   {
+    "file": "xbg001_psid.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.67,
+    "url": "./models/xbg001_psid.glb"
+   }
+  ]
+ },
+ "xbg002_zeus": {
+  "name": "天意 [Z.E.U.S.]",
+  "camp": "Z.E.U.S.",
+  "variants": [
+   {
+    "file": "xbg002_zeus.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 8.12,
+    "url": "./models/xbg002_zeus.glb"
+   }
+  ]
+ },
+ "xbg003_hsta": {
+  "name": "独一 [H.S.T.A.]",
+  "camp": "H.S.T.A.",
+  "variants": [
+   {
+    "file": "xbg003_hsta.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.76,
+    "url": "./models/xbg003_hsta.glb"
+   }
+  ]
+ },
+ "xbg004_psid": {
+  "name": "奥图露亚 [P.S.I.D.]",
+  "camp": "P.S.I.D.",
+  "variants": [
+   {
+    "file": "xbg004_psid.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.1,
+    "url": "./models/xbg004_psid.glb"
+   }
+  ]
+ },
+ "xbg004_zeus": {
+  "name": "奥图露亚 [Z.E.U.S.]",
+  "camp": "Z.E.U.S.",
+  "variants": [
+   {
+    "file": "xbg004_zeus.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 4.1,
+    "url": "./models/xbg004_zeus.glb"
+   }
+  ]
+ },
+ "xbg005_psid": {
+  "name": "艾格维斯塔 [P.S.I.D.]",
+  "camp": "P.S.I.D.",
+  "variants": [
+   {
+    "file": "xbg005_psid.glb",
+    "label": "整体",
+    "kind": "static",
+    "size": 3.14,
+    "url": "./models/xbg005_psid.glb"
+   }
+  ]
+ },
+ "xbg006_anmi": {
+  "name": "胜利女神",
+  "camp": "A.N.M.I.",
+  "variants": [
+   {
+    "file": "xbg006_anmi__xbg006_1phase.glb",
+    "label": "1 阶段",
+    "kind": "static",
+    "size": 2.02,
+    "url": "./models/xbg006_anmi__xbg006_1phase.glb"
+   },
+   {
+    "file": "xbg006_anmi__idle_1phase.glb",
+    "label": "1 阶段 · idle",
+    "kind": "idle",
+    "size": 2.23,
+    "url": "./models/xbg006_anmi__idle_1phase.glb"
+   },
+   {
+    "file": "xbg006_anmi__xbg006_2phase.glb",
+    "label": "2 阶段",
+    "kind": "static",
+    "size": 4.18,
+    "url": "./models/xbg006_anmi__xbg006_2phase.glb"
+   },
+   {
+    "file": "xbg006_anmi__idle_2phase.glb",
+    "label": "2 阶段 · idle",
+    "kind": "idle",
+    "size": 4.93,
+    "url": "./models/xbg006_anmi__idle_2phase.glb"
+   }
+  ]
+ }
+}

@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>莱彻 3D 查看器 · 47–50 章关底 BOSS</title>
+<title>莱彻 3D 查看器 · 主线全 BOSS</title>
 <style>
   :root{
     --bg:#0e1116; --panel:#161b22; --line:#2a323d; --fg:#e6edf3;
@@ -72,6 +72,21 @@
     font-variant-numeric:tabular-nums}
   .hint b{color:var(--fg);font-weight:500}
   #gifGo.busy{opacity:.55;pointer-events:none}
+  /* BOSS 清单：从 4 个扩到全量后必须能滚动 + 搜索 */
+  #bossSearch{width:100%;margin-bottom:6px;background:#0d1218;border:1px solid var(--line);
+    color:var(--fg);border-radius:6px;padding:5px 8px;font-size:11px;outline:none;
+    font-family:inherit}
+  #bossSearch:focus{border-color:var(--acc)}
+  #bossSeg{max-height:250px;overflow-y:auto;grid-template-columns:1fr;gap:3px;
+    padding-right:3px;scrollbar-width:thin}
+  #bossSeg button{text-align:left;padding:5px 9px;display:flex;align-items:center;
+    justify-content:space-between;gap:8px;font-size:12px}
+  #bossSeg button em{font-style:normal;font-size:10px;color:var(--dim);
+    flex:none;letter-spacing:.3px}
+  #bossSeg button.on em{color:rgba(4,16,31,.68)}
+  #bossSeg .grpname{font-size:10px;color:var(--dim);letter-spacing:1px;
+    margin:6px 0 1px;text-transform:uppercase}
+  #bossCount{font-size:10px;color:var(--dim);font-weight:400;margin-left:5px}
 </style>
 </head>
 <body>
@@ -79,24 +94,17 @@
 
 <div id="hud">
   <h1>莱彻 3D 查看器</h1>
-  <div class="sub">47 – 50 章关底 BOSS · 带骨骼动画</div>
+  <div class="sub">主线全 BOSS · 含各时期变体</div>
 
   <div class="grp">
-    <label>BOSS</label>
-    <div class="seg" id="bossSeg">
-      <button data-boss="xba003" class="on">安尼希利奥<i>47 章</i></button>
-      <button data-boss="eba002">莉贝雷利奥躯体<i>48 章</i></button>
-      <button data-boss="xba004_dmtr">怀旧<i>49 章</i></button>
-      <button data-boss="xbg006_anmi">胜利女神<i>50 章</i></button>
-    </div>
+    <label>BOSS<span id="bossCount"></span></label>
+    <input id="bossSearch" placeholder="搜索名称 / 型号 / 阵营" autocomplete="off">
+    <div class="seg" id="bossSeg"></div>
   </div>
 
   <div class="grp">
-    <label>阶段</label>
-    <div class="seg" id="phaseSeg">
-      <button data-phase="1phase" class="on">1 阶段</button>
-      <button data-phase="2phase">2 阶段</button>
-    </div>
+    <label>形态</label>
+    <div class="seg" id="phaseSeg"></div>
   </div>
 
   <div class="grp">
@@ -195,38 +203,36 @@ import { GLTFLoader } from './vendor/GLTFLoader.js';
 import { OrbitControls } from './vendor/OrbitControls.js';
 import { exportGif, planFrames } from './gif-export.js';
 
-// 2:null = 单形态 BOSS（没有 2 阶段变体根），阶段按钮会自动置灰
-const MODELS = {
-  xba003:      { name:'安尼希利奥',     1:'./models/xba003_1phase.glb',          2:'./models/xba003_2phase.glb' },
-  eba002:      { name:'莉贝雷利奥躯体', 1:'./models/eba002_1phase.glb',          2:'./models/eba002_2phase.glb' },
-  xbg006_anmi: { name:'胜利女神',       1:'./models/xbg006_anmi_1phase.glb',     2:'./models/xbg006_anmi_2phase.glb' },
-  xba004_dmtr: { name:'怀旧',           1:'./models/xba004_dmtr.glb',           2:null },
+// BOSS 清单运行时读 models/manifest.json（导出的 glb 有 70+ 个，
+// 写死在页面里既难维护，也没法随版本更新）。结构：
+// { "<tag>": { name, camp, variants:[{file, phase, label, url}] } }
+let MODELS = {};
+
+// 旧链接兼容：47/48 章当时用的是 xba003 / eba002，新清单里带内容后缀
+const ALIAS = { xba003:'xba003_dmtr', eba002:'eba002_hsta' };
+
+// URL 参数先暂存，等 manifest 到位再套（BOSS 列表是运行时拿的）
+const QS = new URLSearchParams(location.search);
+const state = {
+  boss:null, variant:0, playing:QS.get('play')==='1', speed:1,
+  autorot:QS.get('rot')==='1', wire:QS.get('wire')==='1',
+  dark:QS.get('bg')!=='light', suspend:false,
+  glb:QS.get('glb')||null, title:QS.get('title')||null,
+  zoom:QS.get('zoom')?parseFloat(QS.get('zoom')):null,
+  seek:QS.has('t')?parseFloat(QS.get('t')):null,
 };
+// ui=0：隐藏左侧面板与状态栏，只留模型，方便截图
+if(QS.get('ui')==='0') document.documentElement.classList.add('noui');
 
-const state = { boss:'xba003', phase:1, playing:false, speed:1, autorot:false, wire:false, dark:true, suspend:false,
-                glb:null, title:null, zoom:null };
-
-// URL 参数：?boss=xba004_dmtr&phase=1&play=1&t=1.2&rot=1&bg=light&wire=1&zoom=1.02
-// 任意 glb：?glb=xbg006_anmi_2phase_dead.glb&title=胜利女神_2阶段_战败
-//   表演动画（登场 / groggy / 战败）与 idle 的网格相同、只有 AnimationClip 不同，
-//   一条动画一个 glb，所以不能再按 boss+phase 取文件，得能直接点名。
-(function(){
-  const q = new URLSearchParams(location.search);
-  if(MODELS[q.get('boss')]) state.boss = q.get('boss');
-  if(q.get('phase') === '2') state.phase = 2;
-  if(q.get('glb'))   state.glb   = q.get('glb');
-  if(q.get('title')) state.title = q.get('title');
-  state.playing = q.get('play') === '1';
-  state.autorot = q.get('rot') === '1';
-  state.wire    = q.get('wire') === '1';
-  state.dark    = q.get('bg') !== 'light';
-  if(q.get('zoom')) state.zoom = parseFloat(q.get('zoom')) || 1.35;
-  state.seek    = q.has('t') ? parseFloat(q.get('t')) : null;
-  // ui=0：隐藏左侧面板与状态栏，只留模型，方便截图
-  if(q.get('ui') === '0'){
-    document.documentElement.classList.add('noui');
-  }
-})();
+function curEntry(){ return MODELS[state.boss] || null; }
+function curVariant(){
+  const m = curEntry(); if(!m || !m.variants || !m.variants.length) return null;
+  return m.variants[Math.min(state.variant, m.variants.length-1)];
+}
+function bossLabel(tag){
+  const m = MODELS[tag]; if(!m) return tag;
+  return m.camp ? `${m.name} [${m.camp}]` : m.name;
+}
 
 const app = document.getElementById('app');
 const renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true, preserveDrawingBuffer:true });
@@ -283,7 +289,11 @@ function fit(obj, key){
   }
   const c = box.getCenter(new THREE.Vector3());
   const s = box.getSize(new THREE.Vector3());
-  const r = Math.max(s.x, s.y, s.z);
+  // 取景基准只取「宽 / 高」的大者，**不取 z**：
+  // 铁匠 bbg003 的包围盒是 25.7 × 15.7 × 79.2，纵深 79 不是体型，是几个离群部件
+  // （武器 / 底座）撑出来的。按三轴最大边取景，相机会被拉到 130 单位外，
+  // 一只 15 米高的 BOSS 在画面里只剩两百像素。侧转时略微出画可以靠滚轮找回来。
+  const r = Math.max(s.x, s.y);
   // zoom 默认 1.35（先例留白口径）；出图文时用 ?zoom=1.02 让主体更满
   const dist = r / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov/2))) * (state.zoom || 1.35);
   homeTarget = c.clone();
@@ -342,7 +352,8 @@ function buildPartList(obj){
 
 function modelUrl(){
   if(state.glb) return './models/' + state.glb;
-  return MODELS[state.boss][state.phase] || MODELS[state.boss][1];
+  const v = curVariant();
+  return v ? v.url : '';
 }
 
 function load(){
@@ -417,14 +428,10 @@ function load(){
 
 // 把 UI 与 state 对齐（含 URL 参数指定的初始状态）
 function syncUI(){
-  document.querySelectorAll('#bossSeg button').forEach(b=>
+  document.querySelectorAll('#bossSeg button[data-boss]').forEach(b=>
     b.classList.toggle('on', b.dataset.boss === state.boss));
-  // 单形态 BOSS（怀旧 xba004_dmtr）没有 2 阶段：置灰，否则点下去是 404
-  const has2 = !!MODELS[state.boss][2];
-  document.querySelectorAll('#phaseSeg button').forEach(b=>{
-    b.disabled = (b.dataset.phase === '2phase' && !has2);
-    b.classList.toggle('on', b.dataset.phase === (state.phase===1?'1phase':'2phase'));
-  });
+  document.querySelectorAll('#phaseSeg button[data-variant]').forEach(b=>
+    b.classList.toggle('on', +b.dataset.variant === state.variant));
 
   const pb = document.getElementById('play');
   if(action){
@@ -452,20 +459,116 @@ function syncUI(){
   tb.classList.toggle('on', !state.dark);
 }
 
-// ---------- UI ----------
-document.getElementById('bossSeg').addEventListener('click', (e)=>{
-  const b = e.target.dataset.boss; if(!b) return;
-  state.boss = b; state.glb = null; state.title = null;   // 手动切 boss 就退出「点名 glb」模式
-  if(state.phase === 2 && !MODELS[b][2]) state.phase = 1; // 该 BOSS 只有 1 阶段
-  [...e.currentTarget.children].forEach(x=>x.classList.toggle('on', x.dataset.boss===b));
+// ---------- BOSS 清单 ----------
+// 阵营分组顺序：先主线原版（无后缀），再按剧情线排
+const CAMP_ORDER = ['', 'A.N.M.I.', 'D.M.T.R.', 'H.S.T.A.', 'P.S.I.D.', 'Z.E.U.S.'];
+
+function buildBossList(filter){
+  const host = document.getElementById('bossSeg');
+  host.innerHTML = '';
+  const all = Object.keys(MODELS);
+  const tags = all.filter(t=>{
+    if(!filter) return true;
+    const m = MODELS[t];
+    return (t + ' ' + (m.name||'') + ' ' + (m.camp||'')).toLowerCase().includes(filter);
+  });
+  const byCamp = {};
+  for(const t of tags){
+    const c = MODELS[t].camp || '';
+    (byCamp[c] = byCamp[c] || []).push(t);
+  }
+  const order = CAMP_ORDER.concat(Object.keys(byCamp).filter(c=>!CAMP_ORDER.includes(c)));
+  for(const c of order){
+    const list = byCamp[c]; if(!list) continue;
+    const h = document.createElement('div');
+    h.className = 'grpname';
+    h.textContent = c || '主线原版';
+    host.appendChild(h);
+    list.sort((a,b)=> (MODELS[a].name||a).localeCompare(MODELS[b].name||b, 'zh'));
+    for(const t of list){
+      const b = document.createElement('button');
+      b.dataset.boss = t;
+      b.innerHTML = `<span>${MODELS[t].name || t}</span><em>${(MODELS[t].variants||[]).length > 1 ? (MODELS[t].variants.length + ' 形态') : t}</em>`;
+      host.appendChild(b);
+    }
+  }
+  document.getElementById('bossCount').textContent = ' ' + tags.length + '/' + all.length;
+  syncUI();
+}
+
+function buildPhaseButtons(){
+  const host = document.getElementById('phaseSeg');
+  host.innerHTML = '';
+  const m = curEntry(); if(!m) return;
+  (m.variants || []).forEach((v, i)=>{
+    const b = document.createElement('button');
+    b.dataset.variant = i;
+    b.textContent = v.label || ('形态 ' + (i+1));
+    host.appendChild(b);
+  });
+  // 4 个变体（1/2 阶段 × 静态/idle）时固定 3 列会被挤扁，让浏览器自动折行
+  host.style.gridTemplateColumns = 'repeat(auto-fit, minmax(68px, 1fr))';
+}
+
+function selectBoss(tag){
+  if(!MODELS[tag]) return;
+  state.boss = tag; state.variant = 0;
+  state.glb = null; state.title = null;      // 手动切 BOSS 就退出「点名 glb」模式
+  buildPhaseButtons();
+  syncUI();
   load();
+}
+
+// URL 参数落到 state 上（BOSS 清单是运行时读的，所以只能在 manifest 到位后套用）
+function applyUrl(){
+  let want = QS.get('boss');
+  if(want && ALIAS[want]) want = ALIAS[want];
+  if(want && MODELS[want]) state.boss = want;
+  if(!state.boss || !MODELS[state.boss]) state.boss = Object.keys(MODELS)[0];
+  if(QS.get('variant') !== null) state.variant = parseInt(QS.get('variant'), 10) || 0;
+  else if(QS.get('phase') === '2') state.variant = 1;
+  const m = MODELS[state.boss];
+  if(m && state.variant >= (m.variants || []).length) state.variant = 0;
+}
+
+async function boot(){
+  setStatus('读取 BOSS 清单…');
+  try{
+    const r = await fetch('./models/manifest.json', {cache:'no-store'});
+    if(!r.ok) throw new Error('HTTP ' + r.status);
+    MODELS = await r.json();
+  }catch(e){
+    setStatus('清单加载失败：' + e.message);
+    console.error(e);
+    return;
+  }
+  const n = Object.keys(MODELS).length;
+  const nv = Object.values(MODELS).reduce((a, m)=> a + ((m.variants||[]).length), 0);
+  const sub = document.querySelector('#hud .sub');
+  if(sub) sub.textContent = `主线全 BOSS · ${n} 个版本 / ${nv} 个模型`;
+  applyUrl();
+  buildBossList('');
+  buildPhaseButtons();
+  load();
+}
+
+// ---------- UI ----------
+// BOSS / 形态按钮都是运行时生成的，所以走事件委托，并且用 closest 过滤
+// （清单里插了阵营分组标题，直接取 e.target.dataset 会拿到 undefined）
+document.getElementById('bossSeg').addEventListener('click', (e)=>{
+  const el = e.target.closest('button[data-boss]'); if(!el) return;
+  selectBoss(el.dataset.boss);
 });
 document.getElementById('phaseSeg').addEventListener('click', (e)=>{
-  const p = e.target.dataset.phase; if(!p) return;
-  state.phase = p==='1phase' ? 1 : 2;
+  const el = e.target.closest('button[data-variant]'); if(!el) return;
+  state.variant = +el.dataset.variant;
   state.glb = null; state.title = null;
-  [...e.currentTarget.children].forEach(x=>x.classList.toggle('on', x.dataset.phase===p));
+  syncUI();
   load();
+});
+
+document.getElementById('bossSearch').addEventListener('input', (e)=>{
+  buildBossList(e.target.value.trim().toLowerCase());
 });
 
 document.getElementById('play').onclick = (e)=>{
@@ -506,7 +609,7 @@ document.getElementById('shot').onclick = ()=>{
   renderer.render(scene, camera);
   const a = document.createElement('a');
   a.href = renderer.domElement.toDataURL('image/png');
-  a.download = `${state.boss}_${state.phase}phase.png`;
+  a.download = `${state.boss}_${(curVariant()||{}).label||state.variant}.png`;
   a.click();
 };
 
@@ -566,7 +669,7 @@ window.__nkas = {
 // 导出模块只认这一层接口，不直接碰 three 的对象。
 const gifCtx = {
   get clipLen(){ return clipLen; },
-  get name(){ return state.title || `${MODELS[state.boss].name}_${state.phase}阶段`; },
+  get name(){ return state.title || `${(curEntry()||{}).name||state.boss}_${(curVariant()||{}).label||''}`; },
   pose(t){
     if(!mixer || !action || !clipLen) return false;
     action.paused = false;                 // paused=true 会把 timeScale 归零，setTime 推不动
@@ -718,7 +821,7 @@ function tick(){
   renderer.render(scene, camera);
 }
 tick();
-load();
+boot();
 </script>
 </body>
 </html>

@@ -1,14 +1,11 @@
-# 莱彻 3D 查看器 · NIKKE 47–50 章关底 BOSS
+# 莱彻 3D 查看器 · NIKKE 主线全 BOSS
 
-四个关底 BOSS（安尼希利奥 47 / 莉贝雷利奥躯体 48 / 怀旧 49 / 胜利女神 50）的 3D 模型，
-从客户端资源包直接导出，**带骨骼、关卡内 idle 与全部登场 / 转阶段 / 战败表演动画**。
-可在浏览器里旋转、切阶段、逐部件拆解、逐条播动画，并能一键导出 GIF 动图。
-
-共计 7 个形态 / 23 个 glb：前两章 5+6 条动画 + 后两章 3 个 idle 与 4 条表演。
+把客户端里**全部 49 个 BOSS 型号**（60 个按钮变体 / 76 个 glb / 307 MB）从资源包直接导出成 glTF，
+在浏览器里旋转、缩放、逐部件拆解、线框查看，四个主线关底 BOSS 还带骨骼 idle 与登场 / 战败表演动画。
 
 - 在线地址：<https://theifxzx666-blip.github.io/Nikke_Lecher_3D/>
 - 参考站 nkas 的同类页面用的是静态烘焙网格（`skins=0 / animations=0`），
-  网页里「动」只是 OrbitControls；本项目的模型是真的在播骨骼动画。
+  网页里「动」只是 OrbitControls；本项目 47–50 章那四个模型是真的在播骨骼动画。
 
 ## 操作
 
@@ -16,9 +13,9 @@
 |---|---|
 | 左键拖动 / 滚轮 / 右键拖动 | 旋转 / 缩放 / 平移 |
 | 双击画面 | 复位视角 |
-| BOSS / 阶段 | 七个形态的关卡内 idle 切换（按钮上标了章号；单形态 BOSS 的 2 阶段自动置灰） |
-| **表演动画** | 登场 / 转阶段（看破·循环·恢复）/ 战败，逐条播 |
-| 播放 | 播 glb 内置骨骼动画，可调速 |
+| BOSS 列表 | 49 个型号，按阵营分组（主线原版 / A.N.M.I. / D.M.T.R. / H.S.T.A. / P.S.I.D. / Z.E.U.S.），可搜索 |
+| 形态 | 单形态的只有一个「整体」；双阶段的有 1 / 2 阶段；标 `· idle` 的是带动画版 |
+| 播放 | 播 glb 内置骨骼动画（只有 47–50 章那 4 个有），可调速 |
 | 自动旋转 / 线框 / 深浅底 | 显示选项 |
 | 部件 | 逐个勾选显隐，用来拆结构 |
 | 截图 | 当前视角存 PNG |
@@ -27,24 +24,45 @@
 URL 参数：
 
 ```
-?boss=xba003|eba002|xbg006_anmi|xba004_dmtr&phase=1|2&play=1&t=1.2&rot=1&wire=1&bg=light&ui=0
-?glb=xba004_dmtr_dead.glb&title=怀旧_战败&play=0&ui=0
+?boss=<型号>&phase=1|2&variant=<序号>&play=1&t=1.2&rot=1&wire=1&bg=light&ui=0
+?glb=xbg006_anmi__perf_appearance.glb&title=胜利女神_登场&play=0&ui=0
 &zoom=1.02   取景系数，默认 1.35；出图文时压到 1.0~1.1 让主体更满
 ```
 
-点过「表演动画」后再点 BOSS / 阶段按钮会退出点名模式，回到七个 idle 形态。
+`boss=` 用型号（如 `bbg002` / `xba003_dmtr`）。旧链接的 `xba003` / `eba002` 会自动映射到
+`xba003_dmtr` / `eba002_hsta`。`?glb=` 可以直接点名任意文件（包括不进按钮的 16 条表演动画）。
+
+## 采集范围与判据
+
+`MonsterModelTable` 里 **Grade=5 且 Size=4** 是该表唯一的 BOSS 级档位，共 69 个型号；
+剔除拦截战 / 联盟突袭 / 单人突袭 / 合作 / 模拟室 / 教学 / 测试 / 全息 / 黄金等非剧情变体后 47 个，
+再加本期新增的 `xba004_dmtr`（怀旧）与 `xbg006_anmi`（胜利女神），共 **49 个版本 / 31 个 BOSS 本体**。
+
+同一个本体在不同剧情线会有多个变体（例：捍卫者 `eba003` 有 A.N.M.I. / D.M.T.R. / H.S.T.A. /
+P.S.I.D. / Z.E.U.S. 五个），列表里都保留 —— 它们的贴图与配色不同，属于不同版本的同一只莱彻。
+
+**章节号没有标，这是有依据的取舍**：客户端里 `CampaignStageTable` 的 `field_monster_id`
+只是该关的巡逻杂兵（49 章 BOSS 关给的是 `23100201`，指向「三体」），关底 BOSS 由服务器战斗数据下发，
+静态表里不存在 `stage → boss 型号` 的映射。硬标章号只能靠剧情文本猜，上一版就是因为这个把
+49/50 章的两只挂反了。所以现在按「型号 + 阵营」组织，不编章节。
 
 ## 模型清单
 
-`models/` 共 23 个 glb（98 MB），一条动画一个文件（不合并，方便单独播与单独导 GIF）：
+`models/` 共 76 个 glb（307 MB）：
 
-| 类别 | 数量 | 文件 |
+| 类别 | 数量 | 说明 |
 |---|---:|---|
-| 关卡内 idle | 7 | `xba003_1phase` / `xba003_2phase` / `eba002_1phase` / `eba002_2phase` / `xbg006_anmi_1phase` / `xbg006_anmi_2phase` / `xba004_dmtr` |
-| 安尼希利奥 · 表演 | 5 | `xba003_1phase_appearance`、`xba003_2phase_groggy_start` / `_loop` / `_end`、`xba003_2phase_death` |
-| 莉贝雷利奥躯体 · 表演 | 7 | `eba002_1phase_intro`、`eba002_2phase_intro_01` / `_02` / `_03`、`eba002_2phase_groggy_start` / `_loop` / `_end` |
-| 胜利女神 · 表演 | 2 | `xbg006_anmi_1phase_appearance`（13.63 s / 410 帧，最长的一条）、`xbg006_anmi_2phase_dead` |
-| 怀旧 · 表演 | 2 | `xba004_dmtr_appearance`、`xba004_dmtr_dead` |
+| 静态模型（按钮可见） | 60 | 每个 BOSS 的每个形态一份，绑定姿态，无动画 |
+| idle 动画 | 7 | 47–50 章那 4 个 BOSS 的 1/2 阶段与怀旧，`<tag>__idle_*` |
+| 表演动画 | 16 | 登场 / 看破循环 / 战败，`<tag>__perf_*`，不进按钮，用 `?glb=` 点名 |
+| 清单 | 1 | `manifest.json`，页面启动时读它渲染 BOSS 列表 |
+
+命名规则：`<型号>.glb` 是单形态整包；`<型号>__1phase.glb` / `__2phase.glb` 是分阶段；
+`__idle_` / `__perf_` 是带动画的版本。
+
+**只有 4 个 BOSS 有独立动画包**：`spotmonsteranimation` 分组里全部 457 条动画只覆盖
+`bbg001 / eba002 / xba003 / xba004 / xbg003 / xbg004 / xbg006` 七个主型号，其余 BOSS 的动画
+没有单独下发（或在模型包内以别的形式存在），所以它们是静态 glb，能旋转拆解但不能播动画。
 
 两个 BOSS 都**没有 1 阶段战败动画** —— 1 阶段血量清空是「打进 2 阶段」，不是当场死，
 所以那东西本来就不存在。
