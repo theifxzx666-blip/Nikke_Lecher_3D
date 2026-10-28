@@ -4,11 +4,45 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
+    "file": "bba001__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_04",
+    "phase": "main",
+    "size": 3633436,
+    "url": "./models/bba001__anim_main.glb",
+    "bbox": [
+     [
+      -38.59,
+      6.2,
+      -28.34
+     ],
+     [
+      38.63,
+      32.48,
+      40.94
+     ]
+    ]
+   },
+   {
     "file": "bba001.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 2.95,
-    "url": "./models/bba001.glb"
+    "url": "./models/bba001.glb",
+    "bbox": [
+     [
+      -38.59,
+      6.2,
+      -28.34
+     ],
+     [
+      38.63,
+      32.48,
+      40.94
+     ]
+    ]
    }
   ]
  },
@@ -17,11 +51,45 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
+    "file": "bba001_zeus__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_04",
+    "phase": "main",
+    "size": 3633456,
+    "url": "./models/bba001_zeus__anim_main.glb",
+    "bbox": [
+     [
+      -38.59,
+      6.2,
+      -28.34
+     ],
+     [
+      38.63,
+      32.48,
+      40.94
+     ]
+    ]
+   },
+   {
     "file": "bba001_zeus.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 2.95,
-    "url": "./models/bba001_zeus.glb"
+    "url": "./models/bba001_zeus.glb",
+    "bbox": [
+     [
+      -38.59,
+      6.2,
+      -28.34
+     ],
+     [
+      38.63,
+      32.48,
+      40.94
+     ]
+    ]
    }
   ]
  },
@@ -30,11 +98,45 @@
   "camp": "",
   "variants": [
    {
+    "file": "bbg001__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "（未记录）",
+    "phase": "main",
+    "size": 3824652,
+    "url": "./models/bbg001__anim_main.glb",
+    "bbox": [
+     [
+      -16.94,
+      -5.07,
+      -19.42
+     ],
+     [
+      17.17,
+      79.29,
+      23.64
+     ]
+    ]
+   },
+   {
     "file": "bbg001.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.46,
-    "url": "./models/bbg001.glb"
+    "url": "./models/bbg001.glb",
+    "bbox": [
+     [
+      -16.94,
+      -5.07,
+      -19.42
+     ],
+     [
+      17.17,
+      79.29,
+      23.64
+     ]
+    ]
    }
   ]
  },
@@ -44,10 +146,23 @@
   "variants": [
    {
     "file": "bbg002.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 2.02,
-    "url": "./models/bbg002.glb"
+    "url": "./models/bbg002.glb",
+    "bbox": [
+     [
+      -7.49,
+      -0.82,
+      -23.45
+     ],
+     [
+      7.48,
+      14.59,
+      7.57
+     ]
+    ]
    }
   ]
  },
@@ -57,10 +172,23 @@
   "variants": [
    {
     "file": "bbg003.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.99,
-    "url": "./models/bbg003.glb"
+    "url": "./models/bbg003.glb",
+    "bbox": [
+     [
+      -12.86,
+      -1.4,
+      -7.43
+     ],
+     [
+      12.86,
+      14.29,
+      71.77
+     ]
+    ]
    }
   ]
  },
@@ -69,11 +197,45 @@
   "camp": "D.M.T.R.",
   "variants": [
    {
+    "file": "bbg004_dmtr__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_06",
+    "phase": "main",
+    "size": 6359056,
+    "url": "./models/bbg004_dmtr__anim_main.glb",
+    "bbox": [
+     [
+      -22.73,
+      -9.83,
+      -8.52
+     ],
+     [
+      23.3,
+      24.86,
+      16.76
+     ]
+    ]
+   },
+   {
     "file": "bbg004_dmtr.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.5,
-    "url": "./models/bbg004_dmtr.glb"
+    "url": "./models/bbg004_dmtr.glb",
+    "bbox": [
+     [
+      -22.73,
+      -9.83,
+      -8.52
+     ],
+     [
+      23.3,
+      24.86,
+      16.76
+     ]
+    ]
    }
   ]
  },
@@ -82,11 +244,45 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
+    "file": "bbg004_psid__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_06",
+    "phase": "main",
+    "size": 6341036,
+    "url": "./models/bbg004_psid__anim_main.glb",
+    "bbox": [
+     [
+      -22.73,
+      -9.83,
+      -8.52
+     ],
+     [
+      23.3,
+      24.86,
+      16.76
+     ]
+    ]
+   },
+   {
     "file": "bbg004_psid.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.48,
-    "url": "./models/bbg004_psid.glb"
+    "url": "./models/bbg004_psid.glb",
+    "bbox": [
+     [
+      -22.73,
+      -9.83,
+      -8.52
+     ],
+     [
+      23.3,
+      24.86,
+      16.76
+     ]
+    ]
    }
   ]
  },
@@ -95,11 +291,45 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
+    "file": "bbg004_zeus__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_06",
+    "phase": "main",
+    "size": 6341264,
+    "url": "./models/bbg004_zeus__anim_main.glb",
+    "bbox": [
+     [
+      -22.73,
+      -9.83,
+      -8.52
+     ],
+     [
+      23.3,
+      24.86,
+      16.76
+     ]
+    ]
+   },
+   {
     "file": "bbg004_zeus.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.48,
-    "url": "./models/bbg004_zeus.glb"
+    "url": "./models/bbg004_zeus.glb",
+    "bbox": [
+     [
+      -22.73,
+      -9.83,
+      -8.52
+     ],
+     [
+      23.3,
+      24.86,
+      16.76
+     ]
+    ]
    }
   ]
  },
@@ -108,11 +338,45 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
+    "file": "bbg006__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_07",
+    "phase": "main",
+    "size": 5058688,
+    "url": "./models/bbg006__anim_main.glb",
+    "bbox": [
+     [
+      -34.17,
+      -0.79,
+      -33.79
+     ],
+     [
+      34.17,
+      30.68,
+      11.4
+     ]
+    ]
+   },
+   {
     "file": "bbg006.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.86,
-    "url": "./models/bbg006.glb"
+    "url": "./models/bbg006.glb",
+    "bbox": [
+     [
+      -34.17,
+      -0.79,
+      -33.79
+     ],
+     [
+      34.17,
+      30.68,
+      11.4
+     ]
+    ]
    }
   ]
  },
@@ -121,11 +385,45 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
+    "file": "bbg006_hsta__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_07",
+    "phase": "main",
+    "size": 5058740,
+    "url": "./models/bbg006_hsta__anim_main.glb",
+    "bbox": [
+     [
+      -34.17,
+      -0.79,
+      -33.79
+     ],
+     [
+      34.17,
+      30.68,
+      11.4
+     ]
+    ]
+   },
+   {
     "file": "bbg006_hsta.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.86,
-    "url": "./models/bbg006_hsta.glb"
+    "url": "./models/bbg006_hsta.glb",
+    "bbox": [
+     [
+      -34.17,
+      -0.79,
+      -33.79
+     ],
+     [
+      34.17,
+      30.68,
+      11.4
+     ]
+    ]
    }
   ]
  },
@@ -134,11 +432,45 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
+    "file": "bbg006_zeus__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_07",
+    "phase": "main",
+    "size": 5058648,
+    "url": "./models/bbg006_zeus__anim_main.glb",
+    "bbox": [
+     [
+      -34.17,
+      -0.79,
+      -33.79
+     ],
+     [
+      34.17,
+      30.68,
+      11.4
+     ]
+    ]
+   },
+   {
     "file": "bbg006_zeus.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.86,
-    "url": "./models/bbg006_zeus.glb"
+    "url": "./models/bbg006_zeus.glb",
+    "bbox": [
+     [
+      -34.17,
+      -0.79,
+      -33.79
+     ],
+     [
+      34.17,
+      30.68,
+      11.4
+     ]
+    ]
    }
   ]
  },
@@ -147,11 +479,45 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
+    "file": "bbg008_hsta__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "idle_01",
+    "phase": "main",
+    "size": 13276108,
+    "url": "./models/bbg008_hsta__anim_main.glb",
+    "bbox": [
+     [
+      -89.86,
+      -13.12,
+      -69.4
+     ],
+     [
+      89.86,
+      41.58,
+      47.92
+     ]
+    ]
+   },
+   {
     "file": "bbg008_hsta.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.98,
-    "url": "./models/bbg008_hsta.glb"
+    "url": "./models/bbg008_hsta.glb",
+    "bbox": [
+     [
+      -89.86,
+      -13.12,
+      -69.4
+     ],
+     [
+      89.86,
+      41.58,
+      47.92
+     ]
+    ]
    }
   ]
  },
@@ -160,11 +526,45 @@
   "camp": "A.N.M.I.",
   "variants": [
    {
+    "file": "bbg009_anmi__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "idle_01",
+    "phase": "main",
+    "size": 5249924,
+    "url": "./models/bbg009_anmi__anim_main.glb",
+    "bbox": [
+     [
+      -28.61,
+      -2.13,
+      -19.72
+     ],
+     [
+      28.61,
+      43.55,
+      17.83
+     ]
+    ]
+   },
+   {
     "file": "bbg009_anmi.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 2.7,
-    "url": "./models/bbg009_anmi.glb"
+    "url": "./models/bbg009_anmi.glb",
+    "bbox": [
+     [
+      -28.61,
+      -2.13,
+      -19.72
+     ],
+     [
+      28.61,
+      43.55,
+      17.83
+     ]
+    ]
    }
   ]
  },
@@ -174,10 +574,23 @@
   "variants": [
    {
     "file": "eba001.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.02,
-    "url": "./models/eba001.glb"
+    "url": "./models/eba001.glb",
+    "bbox": [
+     [
+      -36.84,
+      -8.26,
+      -9.44
+     ],
+     [
+      36.35,
+      19.53,
+      14.99
+     ]
+    ]
    }
   ]
  },
@@ -187,10 +600,23 @@
   "variants": [
    {
     "file": "eba001_anmi.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.68,
-    "url": "./models/eba001_anmi.glb"
+    "url": "./models/eba001_anmi.glb",
+    "bbox": [
+     [
+      -40.07,
+      -8.26,
+      -9.44
+     ],
+     [
+      40.07,
+      19.53,
+      15.02
+     ]
+    ]
    }
   ]
  },
@@ -199,32 +625,86 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
-    "file": "eba002_hsta__eba002_1phase.glb",
-    "label": "1 阶段",
-    "kind": "static",
-    "size": 3.07,
-    "url": "./models/eba002_hsta__eba002_1phase.glb"
+    "file": "eba002_hsta__anim_1phase.glb",
+    "label": "1 阶段·动",
+    "kind": "anim",
+    "clip": "1phase_idle-raw",
+    "phase": "1phase",
+    "size": 4224632,
+    "url": "./models/eba002_hsta__anim_1phase.glb",
+    "bbox": [
+     [
+      -15.94,
+      -28.87,
+      -13.73
+     ],
+     [
+      15.94,
+      14.18,
+      17.07
+     ]
+    ]
    },
    {
-    "file": "eba002_hsta__idle_1phase.glb",
-    "label": "1 阶段 · idle",
-    "kind": "idle",
-    "size": 4.03,
-    "url": "./models/eba002_hsta__idle_1phase.glb"
+    "file": "eba002_hsta__anim_2phase.glb",
+    "label": "2 阶段·动",
+    "kind": "anim",
+    "clip": "2phase_idle-raw",
+    "phase": "2phase",
+    "size": 3372836,
+    "url": "./models/eba002_hsta__anim_2phase.glb",
+    "bbox": [
+     [
+      -12.14,
+      -22.64,
+      -9.3
+     ],
+     [
+      12.16,
+      9.94,
+      4.23
+     ]
+    ]
+   },
+   {
+    "file": "eba002_hsta__eba002_1phase.glb",
+    "label": "1 阶段·静",
+    "kind": "static",
+    "phase": "1 阶段",
+    "size": 3.07,
+    "url": "./models/eba002_hsta__eba002_1phase.glb",
+    "bbox": [
+     [
+      -15.94,
+      -28.87,
+      -13.73
+     ],
+     [
+      15.94,
+      14.18,
+      17.07
+     ]
+    ]
    },
    {
     "file": "eba002_hsta__eba002_2phase.glb",
-    "label": "2 阶段",
+    "label": "2 阶段·静",
     "kind": "static",
+    "phase": "2 阶段",
     "size": 2.61,
-    "url": "./models/eba002_hsta__eba002_2phase.glb"
-   },
-   {
-    "file": "eba002_hsta__idle_2phase.glb",
-    "label": "2 阶段 · idle",
-    "kind": "idle",
-    "size": 3.22,
-    "url": "./models/eba002_hsta__idle_2phase.glb"
+    "url": "./models/eba002_hsta__eba002_2phase.glb",
+    "bbox": [
+     [
+      -12.14,
+      -22.64,
+      -9.3
+     ],
+     [
+      12.16,
+      9.94,
+      4.23
+     ]
+    ]
    }
   ]
  },
@@ -234,10 +714,23 @@
   "variants": [
    {
     "file": "eba003.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.11,
-    "url": "./models/eba003.glb"
+    "url": "./models/eba003.glb",
+    "bbox": [
+     [
+      -39.74,
+      5.35,
+      -78.15
+     ],
+     [
+      40.43,
+      37.52,
+      27.84
+     ]
+    ]
    }
   ]
  },
@@ -247,10 +740,23 @@
   "variants": [
    {
     "file": "eba003_dmtr.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 5.12,
-    "url": "./models/eba003_dmtr.glb"
+    "url": "./models/eba003_dmtr.glb",
+    "bbox": [
+     [
+      -39.74,
+      5.35,
+      -78.15
+     ],
+     [
+      40.43,
+      37.52,
+      27.84
+     ]
+    ]
    }
   ]
  },
@@ -260,10 +766,23 @@
   "variants": [
    {
     "file": "eba003_hsta.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 5.11,
-    "url": "./models/eba003_hsta.glb"
+    "url": "./models/eba003_hsta.glb",
+    "bbox": [
+     [
+      -39.74,
+      5.35,
+      -78.15
+     ],
+     [
+      40.43,
+      37.52,
+      27.84
+     ]
+    ]
    }
   ]
  },
@@ -273,10 +792,23 @@
   "variants": [
    {
     "file": "eba003_psid.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.41,
-    "url": "./models/eba003_psid.glb"
+    "url": "./models/eba003_psid.glb",
+    "bbox": [
+     [
+      -46.45,
+      -8.18,
+      -78.15
+     ],
+     [
+      44.11,
+      37.52,
+      27.84
+     ]
+    ]
    }
   ]
  },
@@ -286,10 +818,23 @@
   "variants": [
    {
     "file": "eba003_zeus.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.42,
-    "url": "./models/eba003_zeus.glb"
+    "url": "./models/eba003_zeus.glb",
+    "bbox": [
+     [
+      -45.18,
+      -10.72,
+      -78.15
+     ],
+     [
+      46.83,
+      37.52,
+      59.93
+     ]
+    ]
    }
   ]
  },
@@ -298,11 +843,45 @@
   "camp": "A.N.M.I.",
   "variants": [
    {
+    "file": "eba004__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "idle_01",
+    "phase": "main",
+    "size": 7691552,
+    "url": "./models/eba004__anim_main.glb",
+    "bbox": [
+     [
+      -20.16,
+      -0.04,
+      -19.4
+     ],
+     [
+      20.16,
+      39.52,
+      19.4
+     ]
+    ]
+   },
+   {
     "file": "eba004.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 1.94,
-    "url": "./models/eba004.glb"
+    "url": "./models/eba004.glb",
+    "bbox": [
+     [
+      -20.16,
+      -0.04,
+      -19.4
+     ],
+     [
+      20.16,
+      39.52,
+      19.4
+     ]
+    ]
    }
   ]
  },
@@ -311,11 +890,45 @@
   "camp": "D.M.T.R.",
   "variants": [
    {
+    "file": "eba004_dmtr__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "idle_01",
+    "phase": "main",
+    "size": 7701236,
+    "url": "./models/eba004_dmtr__anim_main.glb",
+    "bbox": [
+     [
+      -20.16,
+      -0.04,
+      -19.4
+     ],
+     [
+      20.16,
+      39.52,
+      19.4
+     ]
+    ]
+   },
+   {
     "file": "eba004_dmtr.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 1.95,
-    "url": "./models/eba004_dmtr.glb"
+    "url": "./models/eba004_dmtr.glb",
+    "bbox": [
+     [
+      -20.16,
+      -0.04,
+      -19.4
+     ],
+     [
+      20.16,
+      39.52,
+      19.4
+     ]
+    ]
    }
   ]
  },
@@ -324,11 +937,45 @@
   "camp": "A.N.M.I.",
   "variants": [
    {
+    "file": "eba005_anmi__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "1phase_idle_01",
+    "phase": "main",
+    "size": 5279620,
+    "url": "./models/eba005_anmi__anim_main.glb",
+    "bbox": [
+     [
+      -24.32,
+      -21.1,
+      -16.93
+     ],
+     [
+      24.32,
+      29.96,
+      16.95
+     ]
+    ]
+   },
+   {
     "file": "eba005_anmi.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.99,
-    "url": "./models/eba005_anmi.glb"
+    "url": "./models/eba005_anmi.glb",
+    "bbox": [
+     [
+      -24.32,
+      -21.1,
+      -16.93
+     ],
+     [
+      24.32,
+      29.96,
+      16.95
+     ]
+    ]
    }
   ]
  },
@@ -337,11 +984,45 @@
   "camp": "",
   "variants": [
    {
+    "file": "ebg001__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_05",
+    "phase": "main",
+    "size": 4831532,
+    "url": "./models/ebg001__anim_main.glb",
+    "bbox": [
+     [
+      -26.08,
+      -4.26,
+      -11.45
+     ],
+     [
+      26.75,
+      29.7,
+      24.73
+     ]
+    ]
+   },
+   {
     "file": "ebg001.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.87,
-    "url": "./models/ebg001.glb"
+    "url": "./models/ebg001.glb",
+    "bbox": [
+     [
+      -26.08,
+      -4.26,
+      -11.45
+     ],
+     [
+      26.75,
+      29.7,
+      24.73
+     ]
+    ]
    }
   ]
  },
@@ -350,11 +1031,45 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
+    "file": "ebg001_hsta__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_05",
+    "phase": "main",
+    "size": 4831564,
+    "url": "./models/ebg001_hsta__anim_main.glb",
+    "bbox": [
+     [
+      -26.08,
+      -4.26,
+      -11.45
+     ],
+     [
+      26.75,
+      29.7,
+      24.73
+     ]
+    ]
+   },
+   {
     "file": "ebg001_hsta.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.87,
-    "url": "./models/ebg001_hsta.glb"
+    "url": "./models/ebg001_hsta.glb",
+    "bbox": [
+     [
+      -26.08,
+      -4.26,
+      -11.45
+     ],
+     [
+      26.75,
+      29.7,
+      24.73
+     ]
+    ]
    }
   ]
  },
@@ -364,10 +1079,23 @@
   "variants": [
    {
     "file": "ebg002.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.94,
-    "url": "./models/ebg002.glb"
+    "url": "./models/ebg002.glb",
+    "bbox": [
+     [
+      -26.69,
+      -3.91,
+      -36.39
+     ],
+     [
+      26.69,
+      40.25,
+      4.67
+     ]
+    ]
    }
   ]
  },
@@ -377,10 +1105,23 @@
   "variants": [
    {
     "file": "ebg002_dmtr.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.87,
-    "url": "./models/ebg002_dmtr.glb"
+    "url": "./models/ebg002_dmtr.glb",
+    "bbox": [
+     [
+      -26.69,
+      -3.91,
+      -36.4
+     ],
+     [
+      26.69,
+      40.25,
+      4.66
+     ]
+    ]
    }
   ]
  },
@@ -390,10 +1131,23 @@
   "variants": [
    {
     "file": "ebg002_hsta.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.69,
-    "url": "./models/ebg002_hsta.glb"
+    "url": "./models/ebg002_hsta.glb",
+    "bbox": [
+     [
+      -26.69,
+      -3.91,
+      -36.4
+     ],
+     [
+      26.69,
+      40.25,
+      4.66
+     ]
+    ]
    }
   ]
  },
@@ -403,10 +1157,23 @@
   "variants": [
    {
     "file": "ebg003.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 6.59,
-    "url": "./models/ebg003.glb"
+    "url": "./models/ebg003.glb",
+    "bbox": [
+     [
+      -16.84,
+      -10.37,
+      -27.79
+     ],
+     [
+      16.84,
+      34.43,
+      14.13
+     ]
+    ]
    }
   ]
  },
@@ -415,11 +1182,45 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
+    "file": "mba002__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "（未记录）",
+    "phase": "main",
+    "size": 7322888,
+    "url": "./models/mba002__anim_main.glb",
+    "bbox": [
+     [
+      -61.56,
+      -3.11,
+      -13.86
+     ],
+     [
+      61.15,
+      36.66,
+      19.73
+     ]
+    ]
+   },
+   {
     "file": "mba002.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.87,
-    "url": "./models/mba002.glb"
+    "url": "./models/mba002.glb",
+    "bbox": [
+     [
+      -61.56,
+      -3.11,
+      -13.86
+     ],
+     [
+      61.15,
+      36.66,
+      19.73
+     ]
+    ]
    }
   ]
  },
@@ -428,11 +1229,45 @@
   "camp": "",
   "variants": [
    {
+    "file": "mbg001__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "phase001_skill_loop_04",
+    "phase": "main",
+    "size": 5627904,
+    "url": "./models/mbg001__anim_main.glb",
+    "bbox": [
+     [
+      -34.18,
+      -0.23,
+      -8.76
+     ],
+     [
+      38.49,
+      16.69,
+      4.67
+     ]
+    ]
+   },
+   {
     "file": "mbg001.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.56,
-    "url": "./models/mbg001.glb"
+    "url": "./models/mbg001.glb",
+    "bbox": [
+     [
+      -34.18,
+      -0.23,
+      -8.76
+     ],
+     [
+      38.49,
+      16.69,
+      4.67
+     ]
+    ]
    }
   ]
  },
@@ -441,11 +1276,45 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
+    "file": "mbg001_psid__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "phase001_skill_loop_04",
+    "phase": "main",
+    "size": 5432716,
+    "url": "./models/mbg001_psid__anim_main.glb",
+    "bbox": [
+     [
+      -34.18,
+      -0.23,
+      -8.76
+     ],
+     [
+      38.49,
+      16.69,
+      4.67
+     ]
+    ]
+   },
+   {
     "file": "mbg001_psid.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.37,
-    "url": "./models/mbg001_psid.glb"
+    "url": "./models/mbg001_psid.glb",
+    "bbox": [
+     [
+      -34.18,
+      -0.23,
+      -8.76
+     ],
+     [
+      38.49,
+      16.69,
+      4.67
+     ]
+    ]
    }
   ]
  },
@@ -455,10 +1324,23 @@
   "variants": [
    {
     "file": "mbg002.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.99,
-    "url": "./models/mbg002.glb"
+    "url": "./models/mbg002.glb",
+    "bbox": [
+     [
+      -8.95,
+      6.18,
+      419.67
+     ],
+     [
+      12.55,
+      26.64,
+      496.44
+     ]
+    ]
    }
   ]
  },
@@ -467,18 +1349,86 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
+    "file": "mbg003_psid__anim_1phase.glb",
+    "label": "1 阶段·动",
+    "kind": "anim",
+    "clip": "1phase_idle",
+    "phase": "1phase",
+    "size": 5613580,
+    "url": "./models/mbg003_psid__anim_1phase.glb",
+    "bbox": [
+     [
+      -40.39,
+      -0.73,
+      -12.77
+     ],
+     [
+      40.39,
+      41.54,
+      12.77
+     ]
+    ]
+   },
+   {
+    "file": "mbg003_psid__anim_2phase.glb",
+    "label": "2 阶段·动",
+    "kind": "anim",
+    "clip": "2phase_idle",
+    "phase": "2phase",
+    "size": 5976012,
+    "url": "./models/mbg003_psid__anim_2phase.glb",
+    "bbox": [
+     [
+      -11.3,
+      -5.76,
+      -16.61
+     ],
+     [
+      11.3,
+      19.51,
+      24.16
+     ]
+    ]
+   },
+   {
     "file": "mbg003_psid__mbg003_1phase.glb",
-    "label": "1 阶段",
+    "label": "1 阶段·静",
     "kind": "static",
+    "phase": "1 阶段",
     "size": 3.62,
-    "url": "./models/mbg003_psid__mbg003_1phase.glb"
+    "url": "./models/mbg003_psid__mbg003_1phase.glb",
+    "bbox": [
+     [
+      -40.39,
+      -0.73,
+      -12.77
+     ],
+     [
+      40.39,
+      41.54,
+      12.77
+     ]
+    ]
    },
    {
     "file": "mbg003_psid__mbg003_2phase.glb",
-    "label": "2 阶段",
+    "label": "2 阶段·静",
     "kind": "static",
+    "phase": "2 阶段",
     "size": 4.19,
-    "url": "./models/mbg003_psid__mbg003_2phase.glb"
+    "url": "./models/mbg003_psid__mbg003_2phase.glb",
+    "bbox": [
+     [
+      -11.3,
+      -5.76,
+      -16.61
+     ],
+     [
+      11.3,
+      19.51,
+      24.16
+     ]
+    ]
    }
   ]
  },
@@ -487,11 +1437,45 @@
   "camp": "",
   "variants": [
    {
+    "file": "mbg004__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_03",
+    "phase": "main",
+    "size": 3606660,
+    "url": "./models/mbg004__anim_main.glb",
+    "bbox": [
+     [
+      -9.99,
+      -1.06,
+      -3.9
+     ],
+     [
+      10.04,
+      18.54,
+      6.93
+     ]
+    ]
+   },
+   {
     "file": "mbg004.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.1,
-    "url": "./models/mbg004.glb"
+    "url": "./models/mbg004.glb",
+    "bbox": [
+     [
+      -9.99,
+      -1.06,
+      -3.9
+     ],
+     [
+      10.04,
+      18.54,
+      6.93
+     ]
+    ]
    }
   ]
  },
@@ -500,11 +1484,45 @@
   "camp": "A.N.M.I.",
   "variants": [
    {
+    "file": "mbg004_anmi__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "skill_loop_03",
+    "phase": "main",
+    "size": 4141860,
+    "url": "./models/mbg004_anmi__anim_main.glb",
+    "bbox": [
+     [
+      -11.02,
+      1.19,
+      -3.63
+     ],
+     [
+      11.02,
+      19.48,
+      7.28
+     ]
+    ]
+   },
+   {
     "file": "mbg004_anmi.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.34,
-    "url": "./models/mbg004_anmi.glb"
+    "url": "./models/mbg004_anmi.glb",
+    "bbox": [
+     [
+      -11.02,
+      1.19,
+      -3.63
+     ],
+     [
+      11.02,
+      19.48,
+      7.28
+     ]
+    ]
    }
   ]
  },
@@ -514,10 +1532,23 @@
   "variants": [
    {
     "file": "xba001.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.46,
-    "url": "./models/xba001.glb"
+    "url": "./models/xba001.glb",
+    "bbox": [
+     [
+      -46.69,
+      -5.36,
+      -17.39
+     ],
+     [
+      46.64,
+      42.05,
+      12.86
+     ]
+    ]
    }
   ]
  },
@@ -526,11 +1557,45 @@
   "camp": "D.M.T.R.",
   "variants": [
    {
+    "file": "xba002_dmtr__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "idle_01",
+    "phase": "main",
+    "size": 4521336,
+    "url": "./models/xba002_dmtr__anim_main.glb",
+    "bbox": [
+     [
+      -27.03,
+      0.21,
+      -27.26
+     ],
+     [
+      27.03,
+      50.7,
+      6.24
+     ]
+    ]
+   },
+   {
     "file": "xba002_dmtr.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.43,
-    "url": "./models/xba002_dmtr.glb"
+    "url": "./models/xba002_dmtr.glb",
+    "bbox": [
+     [
+      -27.03,
+      0.21,
+      -27.26
+     ],
+     [
+      27.03,
+      50.7,
+      6.24
+     ]
+    ]
    }
   ]
  },
@@ -539,32 +1604,86 @@
   "camp": "D.M.T.R.",
   "variants": [
    {
-    "file": "xba003_dmtr__xba003_1phase.glb",
-    "label": "1 阶段",
-    "kind": "static",
-    "size": 1.43,
-    "url": "./models/xba003_dmtr__xba003_1phase.glb"
+    "file": "xba003_dmtr__anim_1phase.glb",
+    "label": "1 阶段·动",
+    "kind": "anim",
+    "clip": "1phase_idle-raw",
+    "phase": "1phase",
+    "size": 1902996,
+    "url": "./models/xba003_dmtr__anim_1phase.glb",
+    "bbox": [
+     [
+      -9.13,
+      -12.53,
+      -7.68
+     ],
+     [
+      9.19,
+      27.84,
+      9.73
+     ]
+    ]
    },
    {
-    "file": "xba003_dmtr__idle_1phase.glb",
-    "label": "1 阶段 · idle",
-    "kind": "idle",
-    "size": 1.81,
-    "url": "./models/xba003_dmtr__idle_1phase.glb"
+    "file": "xba003_dmtr__anim_2phase.glb",
+    "label": "2 阶段·动",
+    "kind": "anim",
+    "clip": "2phase_idle-raw",
+    "phase": "2phase",
+    "size": 5654824,
+    "url": "./models/xba003_dmtr__anim_2phase.glb",
+    "bbox": [
+     [
+      -14.65,
+      -12.31,
+      -6.43
+     ],
+     [
+      14.59,
+      26.71,
+      12.46
+     ]
+    ]
+   },
+   {
+    "file": "xba003_dmtr__xba003_1phase.glb",
+    "label": "1 阶段·静",
+    "kind": "static",
+    "phase": "1 阶段",
+    "size": 1.43,
+    "url": "./models/xba003_dmtr__xba003_1phase.glb",
+    "bbox": [
+     [
+      -9.13,
+      -12.53,
+      -7.68
+     ],
+     [
+      9.19,
+      27.84,
+      9.73
+     ]
+    ]
    },
    {
     "file": "xba003_dmtr__xbga03_2phase.glb",
-    "label": "2 阶段",
+    "label": "2 阶段·静",
     "kind": "static",
+    "phase": "2 阶段",
     "size": 4.52,
-    "url": "./models/xba003_dmtr__xbga03_2phase.glb"
-   },
-   {
-    "file": "xba003_dmtr__idle_2phase.glb",
-    "label": "2 阶段 · idle",
-    "kind": "idle",
-    "size": 5.39,
-    "url": "./models/xba003_dmtr__idle_2phase.glb"
+    "url": "./models/xba003_dmtr__xbga03_2phase.glb",
+    "bbox": [
+     [
+      -14.65,
+      -12.31,
+      -6.43
+     ],
+     [
+      14.59,
+      26.71,
+      12.46
+     ]
+    ]
    }
   ]
  },
@@ -573,18 +1692,45 @@
   "camp": "D.M.T.R.",
   "variants": [
    {
-    "file": "xba004_dmtr.glb",
-    "label": "整体",
-    "kind": "static",
-    "size": 3.04,
-    "url": "./models/xba004_dmtr.glb"
+    "file": "xba004_dmtr__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "idle_on_01-raw",
+    "phase": "main",
+    "size": 5066424,
+    "url": "./models/xba004_dmtr__anim_main.glb",
+    "bbox": [
+     [
+      -33.15,
+      -3.64,
+      -11.73
+     ],
+     [
+      33.1,
+      59.13,
+      11.73
+     ]
+    ]
    },
    {
-    "file": "xba004_dmtr__idle_main.glb",
-    "label": "整体 · idle",
-    "kind": "idle",
-    "size": 4.83,
-    "url": "./models/xba004_dmtr__idle_main.glb"
+    "file": "xba004_dmtr.glb",
+    "label": "静态",
+    "kind": "static",
+    "phase": "main",
+    "size": 3.04,
+    "url": "./models/xba004_dmtr.glb",
+    "bbox": [
+     [
+      -33.15,
+      -3.64,
+      -11.73
+     ],
+     [
+      33.1,
+      59.13,
+      11.73
+     ]
+    ]
    }
   ]
  },
@@ -594,10 +1740,23 @@
   "variants": [
    {
     "file": "xbg001_anmi.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.69,
-    "url": "./models/xbg001_anmi.glb"
+    "url": "./models/xbg001_anmi.glb",
+    "bbox": [
+     [
+      -20.65,
+      -9.04,
+      -13.45
+     ],
+     [
+      20.65,
+      20.67,
+      11.43
+     ]
+    ]
    }
   ]
  },
@@ -607,10 +1766,23 @@
   "variants": [
    {
     "file": "xbg001_psid.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.67,
-    "url": "./models/xbg001_psid.glb"
+    "url": "./models/xbg001_psid.glb",
+    "bbox": [
+     [
+      -20.65,
+      -2.66,
+      -13.45
+     ],
+     [
+      20.65,
+      20.67,
+      11.43
+     ]
+    ]
    }
   ]
  },
@@ -619,11 +1791,45 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
+    "file": "xbg002_zeus__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "idle_01",
+    "phase": "main",
+    "size": 11736024,
+    "url": "./models/xbg002_zeus__anim_main.glb",
+    "bbox": [
+     [
+      -8.41,
+      -0.07,
+      -15.86
+     ],
+     [
+      8.41,
+      22.13,
+      3.18
+     ]
+    ]
+   },
+   {
     "file": "xbg002_zeus.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 8.12,
-    "url": "./models/xbg002_zeus.glb"
+    "url": "./models/xbg002_zeus.glb",
+    "bbox": [
+     [
+      -8.41,
+      -0.07,
+      -15.86
+     ],
+     [
+      8.41,
+      22.13,
+      3.18
+     ]
+    ]
    }
   ]
  },
@@ -632,11 +1838,45 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
+    "file": "xbg003_hsta__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "idle_1phase",
+    "phase": "main",
+    "size": 5858308,
+    "url": "./models/xbg003_hsta__anim_main.glb",
+    "bbox": [
+     [
+      -30.77,
+      -13.79,
+      -20.36
+     ],
+     [
+      30.77,
+      41.87,
+      21.77
+     ]
+    ]
+   },
+   {
     "file": "xbg003_hsta.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.76,
-    "url": "./models/xbg003_hsta.glb"
+    "url": "./models/xbg003_hsta.glb",
+    "bbox": [
+     [
+      -30.77,
+      -13.79,
+      -20.36
+     ],
+     [
+      30.77,
+      41.87,
+      21.77
+     ]
+    ]
    }
   ]
  },
@@ -645,11 +1885,45 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
+    "file": "xbg004_psid__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "idle_01",
+    "phase": "main",
+    "size": 6054488,
+    "url": "./models/xbg004_psid__anim_main.glb",
+    "bbox": [
+     [
+      -15.07,
+      0.01,
+      -4.02
+     ],
+     [
+      15.07,
+      19.07,
+      4.48
+     ]
+    ]
+   },
+   {
     "file": "xbg004_psid.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.1,
-    "url": "./models/xbg004_psid.glb"
+    "url": "./models/xbg004_psid.glb",
+    "bbox": [
+     [
+      -15.07,
+      0.01,
+      -4.02
+     ],
+     [
+      15.07,
+      19.07,
+      4.48
+     ]
+    ]
    }
   ]
  },
@@ -658,11 +1932,45 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
+    "file": "xbg004_zeus__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "idle_01",
+    "phase": "main",
+    "size": 6057348,
+    "url": "./models/xbg004_zeus__anim_main.glb",
+    "bbox": [
+     [
+      -15.07,
+      0.01,
+      -4.02
+     ],
+     [
+      15.07,
+      19.07,
+      4.48
+     ]
+    ]
+   },
+   {
     "file": "xbg004_zeus.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 4.1,
-    "url": "./models/xbg004_zeus.glb"
+    "url": "./models/xbg004_zeus.glb",
+    "bbox": [
+     [
+      -15.07,
+      0.01,
+      -4.02
+     ],
+     [
+      15.07,
+      19.07,
+      4.48
+     ]
+    ]
    }
   ]
  },
@@ -671,11 +1979,45 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
+    "file": "xbg005_psid__anim_main.glb",
+    "label": "动态",
+    "kind": "anim",
+    "clip": "1phase_idle_01",
+    "phase": "main",
+    "size": 4040788,
+    "url": "./models/xbg005_psid__anim_main.glb",
+    "bbox": [
+     [
+      -27.41,
+      -6.49,
+      -24.95
+     ],
+     [
+      27.41,
+      27.18,
+      9.06
+     ]
+    ]
+   },
+   {
     "file": "xbg005_psid.glb",
-    "label": "整体",
+    "label": "静态",
     "kind": "static",
+    "phase": "main",
     "size": 3.14,
-    "url": "./models/xbg005_psid.glb"
+    "url": "./models/xbg005_psid.glb",
+    "bbox": [
+     [
+      -27.41,
+      -6.49,
+      -24.95
+     ],
+     [
+      27.41,
+      27.18,
+      9.06
+     ]
+    ]
    }
   ]
  },
@@ -684,32 +2026,86 @@
   "camp": "A.N.M.I.",
   "variants": [
    {
-    "file": "xbg006_anmi__xbg006_1phase.glb",
-    "label": "1 阶段",
-    "kind": "static",
-    "size": 2.02,
-    "url": "./models/xbg006_anmi__xbg006_1phase.glb"
+    "file": "xbg006_anmi__anim_1phase.glb",
+    "label": "1 阶段·动",
+    "kind": "anim",
+    "clip": "1phase_idle-raw",
+    "phase": "1phase",
+    "size": 2338688,
+    "url": "./models/xbg006_anmi__anim_1phase.glb",
+    "bbox": [
+     [
+      -96.89,
+      -8.16,
+      -50.98
+     ],
+     [
+      96.89,
+      222.07,
+      98.26
+     ]
+    ]
    },
    {
-    "file": "xbg006_anmi__idle_1phase.glb",
-    "label": "1 阶段 · idle",
-    "kind": "idle",
-    "size": 2.23,
-    "url": "./models/xbg006_anmi__idle_1phase.glb"
+    "file": "xbg006_anmi__anim_2phase.glb",
+    "label": "2 阶段·动",
+    "kind": "anim",
+    "clip": "2phase_idle-raw",
+    "phase": "2phase",
+    "size": 5170628,
+    "url": "./models/xbg006_anmi__anim_2phase.glb",
+    "bbox": [
+     [
+      -33.4,
+      -2.62,
+      -17.68
+     ],
+     [
+      24.76,
+      38.75,
+      20.17
+     ]
+    ]
+   },
+   {
+    "file": "xbg006_anmi__xbg006_1phase.glb",
+    "label": "1 阶段·静",
+    "kind": "static",
+    "phase": "1 阶段",
+    "size": 2.02,
+    "url": "./models/xbg006_anmi__xbg006_1phase.glb",
+    "bbox": [
+     [
+      -96.89,
+      -8.16,
+      -50.98
+     ],
+     [
+      96.89,
+      222.07,
+      98.26
+     ]
+    ]
    },
    {
     "file": "xbg006_anmi__xbg006_2phase.glb",
-    "label": "2 阶段",
+    "label": "2 阶段·静",
     "kind": "static",
+    "phase": "2 阶段",
     "size": 4.18,
-    "url": "./models/xbg006_anmi__xbg006_2phase.glb"
-   },
-   {
-    "file": "xbg006_anmi__idle_2phase.glb",
-    "label": "2 阶段 · idle",
-    "kind": "idle",
-    "size": 4.93,
-    "url": "./models/xbg006_anmi__idle_2phase.glb"
+    "url": "./models/xbg006_anmi__xbg006_2phase.glb",
+    "bbox": [
+     [
+      -33.4,
+      -2.62,
+      -17.68
+     ],
+     [
+      24.76,
+      38.75,
+      20.17
+     ]
+    ]
    }
   ]
  }

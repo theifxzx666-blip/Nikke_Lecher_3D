@@ -109,7 +109,7 @@
 
   <div class="grp">
     <label>动画</label>
-    <button id="play" style="width:100%">▶ 播放关卡内 idle</button>
+    <button id="play" style="width:100%">▶ 播放动作</button>
     <div class="row"><span style="color:var(--dim);font-size:11px">速度</span>
       <input id="speed" type="range" min="0" max="200" value="100">
       <span class="val" id="speedV">1.0×</span></div>
@@ -214,7 +214,9 @@ const ALIAS = { xba003:'xba003_dmtr', eba002:'eba002_hsta' };
 // URL 参数先暂存，等 manifest 到位再套（BOSS 列表是运行时拿的）
 const QS = new URLSearchParams(location.search);
 const state = {
-  boss:null, variant:0, playing:QS.get('play')==='1', speed:1,
+  // 默认播放：glb 里带 animations 就播，静态版会在 load() 里被自动关掉。
+  // 想固定某一帧截图用 ?play=0 关掉。
+  boss:null, variant:0, playing:QS.get('play')!=='0', speed:1,
   autorot:QS.get('rot')==='1', wire:QS.get('wire')==='1',
   dark:QS.get('bg')!=='light', suspend:false,
   glb:QS.get('glb')||null, title:QS.get('title')||null,
@@ -261,6 +263,15 @@ function setStatus(t){ document.getElementById('status').textContent = t; }
 
 function fit(obj, key){
   box = new THREE.Box3().setFromObject(obj);
+  // 带动画的变体必须用 manifest 里的 bbox（来自同阶段静态版的真实顶点范围）。
+  // 原因：THREE.Box3.setFromObject 对 SkinnedMesh 取的是 geometry 的静态 boundingBox，
+  // 那是**未蒙皮**的顶点范围，跟渲染出来的位置对不上 —— 实测胜利女神 2 阶段
+  // 会因此把相机推到很远，模型只占画面四成。
+  const cv = curVariant();
+  if(cv && cv.bbox && cv.bbox.length === 2){
+    box.set(new THREE.Vector3().fromArray(cv.bbox[0]),
+            new THREE.Vector3().fromArray(cv.bbox[1]));
+  }
   // 动画模型：用 framing.js 里算好的框，而不是加载那一刻（= 绑定姿态）的包围盒。
   //
   // 这里用 bind（模型本体），**不用** union（整段动画的并集）。
@@ -294,8 +305,11 @@ function fit(obj, key){
   // （武器 / 底座）撑出来的。按三轴最大边取景，相机会被拉到 130 单位外，
   // 一只 15 米高的 BOSS 在画面里只剩两百像素。侧转时略微出画可以靠滚轮找回来。
   const r = Math.max(s.x, s.y);
-  // zoom 默认 1.35（先例留白口径）；出图文时用 ?zoom=1.02 让主体更满
-  const dist = r / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov/2))) * (state.zoom || 1.35);
+  // zoom 默认 1.35（先例留白口径）；出图文时用 ?zoom=1.02 让主体更满。
+  // 没有旧 framing 数据的新模型用 1.1 —— 它们只有 manifest 的 bbox 兜底，
+  // 留白 1.35 会显得空（实测胜利女神 2 阶段只占画面 35%）。
+  const zf = (fr && fr.bind) ? 1.35 : 1.1;
+  const dist = r / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov/2))) * (state.zoom || zf);
   homeTarget = c.clone();
   homePos = new THREE.Vector3(c.x, c.y, c.z + dist);
   camera.position.copy(homePos);
@@ -447,7 +461,7 @@ function syncUI(){
     else mixer.update(0);
     action.paused = !state.playing;
     pb.classList.toggle('on', state.playing);
-    pb.textContent = state.playing ? '⏸ 暂停' : '▶ 播放关卡内 idle';
+    pb.textContent = state.playing ? '⏸ 暂停' : '▶ 播放动作';
   }
   controls.autoRotate = state.autorot;
   document.getElementById('autorot').classList.toggle('on', state.autorot);
@@ -514,6 +528,7 @@ function selectBoss(tag){
   if(!MODELS[tag]) return;
   state.boss = tag; state.variant = 0;
   state.glb = null; state.title = null;      // 手动切 BOSS 就退出「点名 glb」模式
+  state.playing = true;                      // 换了模型就重新播（静态版会在 load 里自动置 false）
   buildPhaseButtons();
   syncUI();
   load();
@@ -563,6 +578,7 @@ document.getElementById('phaseSeg').addEventListener('click', (e)=>{
   const el = e.target.closest('button[data-variant]'); if(!el) return;
   state.variant = +el.dataset.variant;
   state.glb = null; state.title = null;
+  state.playing = true;                      // 切形态时重新播，避免从静态切回动画后停在首帧
   syncUI();
   load();
 });
@@ -575,7 +591,7 @@ document.getElementById('play').onclick = (e)=>{
   if(!action) return;
   state.playing = !state.playing;
   e.currentTarget.classList.toggle('on', state.playing);
-  e.currentTarget.textContent = state.playing ? '⏸ 暂停' : '▶ 播放关卡内 idle';
+  e.currentTarget.textContent = state.playing ? '⏸ 暂停' : '▶ 播放动作';
   state.playing ? action.play() : action.stop();
 };
 
@@ -654,6 +670,20 @@ window.__nkas = {
   },
   info(){ return { ready: this.ready, clipLen, parts: root?.userData.parts || 0,
                    bones: root?.userData.bones || 0 }; },
+  // 骨骼签名：把每根骨骼的 local position 加权求和。
+  // 不能靠 bbox 判断动画有没有在动 —— THREE.Box3.setFromObject 对 SkinnedMesh
+  // 用的是 geometry 的静态 boundingBox，蒙皮变形不会反映到包围盒上（实测两帧全等）。
+  probe(){
+    if(!root) return null;
+    let n = 0, sx = 0, sy = 0, sz = 0;
+    root.traverse(o=>{
+      if(o.isBone){
+        n++;
+        sx += o.position.x; sy += o.position.y; sz += o.position.z;
+      }
+    });
+    return { bones:n, sig:[+sx.toFixed(3), +sy.toFixed(3), +sz.toFixed(3)] };
+  },
   // 世界包围盒：判断「画面黑」到底是相机没对准，还是动画把网格压成一点
   bbox(){
     if(!root) return null;
