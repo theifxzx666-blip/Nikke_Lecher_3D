@@ -86,8 +86,8 @@
     <div class="seg" id="bossSeg">
       <button data-boss="xba003" class="on">安尼希利奥<i>47 章</i></button>
       <button data-boss="eba002">莉贝雷利奥躯体<i>48 章</i></button>
-      <button data-boss="xbg006_anmi">胜利女神<i>49 章</i></button>
-      <button data-boss="xba004_dmtr">怀旧<i>50 章</i></button>
+      <button data-boss="xba004_dmtr">怀旧<i>49 章</i></button>
+      <button data-boss="xbg006_anmi">胜利女神<i>50 章</i></button>
     </div>
   </div>
 
@@ -206,7 +206,7 @@ const MODELS = {
 const state = { boss:'xba003', phase:1, playing:false, speed:1, autorot:false, wire:false, dark:true, suspend:false,
                 glb:null, title:null, zoom:null };
 
-// URL 参数：?boss=xbg006_anmi&phase=2&play=1&t=1.2&rot=1&bg=light&wire=1&zoom=1.02
+// URL 参数：?boss=xba004_dmtr&phase=1&play=1&t=1.2&rot=1&bg=light&wire=1&zoom=1.02
 // 任意 glb：?glb=xbg006_anmi_2phase_dead.glb&title=胜利女神_2阶段_战败
 //   表演动画（登场 / groggy / 战败）与 idle 的网格相同、只有 AnimationClip 不同，
 //   一条动画一个 glb，所以不能再按 boss+phase 取文件，得能直接点名。
