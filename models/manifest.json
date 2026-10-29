@@ -4,13 +4,12 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
-    "file": "bba001__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_04",
+    "file": "bba001.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 3633436,
-    "url": "./models/bba001__anim_main.glb",
+    "size": 2.95,
+    "url": "./models/bba001.glb",
     "bbox": [
      [
       -38.59,
@@ -25,12 +24,15 @@
     ]
    },
    {
-    "file": "bba001.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bba001__anim_all.glb",
+    "label": "全部动作（6）",
+    "kind": "anim",
     "phase": "main",
-    "size": 2.95,
-    "url": "./models/bba001.glb",
+    "clips": 6,
+    "channels": 995,
+    "duration": 3.87,
+    "size": 4.8,
+    "url": "./models/bba001__anim_all.glb",
     "bbox": [
      [
       -38.59,
@@ -51,13 +53,12 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
-    "file": "bba001_zeus__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_04",
+    "file": "bba001_zeus.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 3633456,
-    "url": "./models/bba001_zeus__anim_main.glb",
+    "size": 2.95,
+    "url": "./models/bba001_zeus.glb",
     "bbox": [
      [
       -38.59,
@@ -72,12 +73,15 @@
     ]
    },
    {
-    "file": "bba001_zeus.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bba001_zeus__anim_all.glb",
+    "label": "全部动作（6）",
+    "kind": "anim",
     "phase": "main",
-    "size": 2.95,
-    "url": "./models/bba001_zeus.glb",
+    "clips": 6,
+    "channels": 995,
+    "duration": 3.87,
+    "size": 4.8,
+    "url": "./models/bba001_zeus__anim_all.glb",
     "bbox": [
      [
       -38.59,
@@ -98,13 +102,12 @@
   "camp": "",
   "variants": [
    {
-    "file": "bbg001__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "（未记录）",
+    "file": "bbg001.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 3824652,
-    "url": "./models/bbg001__anim_main.glb",
+    "size": 3.46,
+    "url": "./models/bbg001.glb",
     "bbox": [
      [
       -16.94,
@@ -119,12 +122,15 @@
     ]
    },
    {
-    "file": "bbg001.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bbg001__anim_all.glb",
+    "label": "全部动作（5）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.46,
-    "url": "./models/bbg001.glb",
+    "clips": 5,
+    "channels": 532,
+    "duration": 2.7,
+    "size": 4.19,
+    "url": "./models/bbg001__anim_all.glb",
     "bbox": [
      [
       -16.94,
@@ -197,13 +203,12 @@
   "camp": "D.M.T.R.",
   "variants": [
    {
-    "file": "bbg004_dmtr__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_06",
+    "file": "bbg004_dmtr.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 6359056,
-    "url": "./models/bbg004_dmtr__anim_main.glb",
+    "size": 4.5,
+    "url": "./models/bbg004_dmtr.glb",
     "bbox": [
      [
       -22.73,
@@ -218,12 +223,15 @@
     ]
    },
    {
-    "file": "bbg004_dmtr.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bbg004_dmtr__anim_all.glb",
+    "label": "全部动作（3）",
+    "kind": "anim",
     "phase": "main",
-    "size": 4.5,
-    "url": "./models/bbg004_dmtr.glb",
+    "clips": 3,
+    "channels": 1274,
+    "duration": 3.37,
+    "size": 7.71,
+    "url": "./models/bbg004_dmtr__anim_all.glb",
     "bbox": [
      [
       -22.73,
@@ -244,13 +252,12 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
-    "file": "bbg004_psid__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_06",
+    "file": "bbg004_psid.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 6341036,
-    "url": "./models/bbg004_psid__anim_main.glb",
+    "size": 4.48,
+    "url": "./models/bbg004_psid.glb",
     "bbox": [
      [
       -22.73,
@@ -265,12 +272,15 @@
     ]
    },
    {
-    "file": "bbg004_psid.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bbg004_psid__anim_all.glb",
+    "label": "全部动作（3）",
+    "kind": "anim",
     "phase": "main",
-    "size": 4.48,
-    "url": "./models/bbg004_psid.glb",
+    "clips": 3,
+    "channels": 1274,
+    "duration": 3.37,
+    "size": 7.69,
+    "url": "./models/bbg004_psid__anim_all.glb",
     "bbox": [
      [
       -22.73,
@@ -291,13 +301,12 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
-    "file": "bbg004_zeus__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_06",
+    "file": "bbg004_zeus.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 6341264,
-    "url": "./models/bbg004_zeus__anim_main.glb",
+    "size": 4.48,
+    "url": "./models/bbg004_zeus.glb",
     "bbox": [
      [
       -22.73,
@@ -312,12 +321,15 @@
     ]
    },
    {
-    "file": "bbg004_zeus.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bbg004_zeus__anim_all.glb",
+    "label": "全部动作（3）",
+    "kind": "anim",
     "phase": "main",
-    "size": 4.48,
-    "url": "./models/bbg004_zeus.glb",
+    "clips": 3,
+    "channels": 1274,
+    "duration": 3.37,
+    "size": 7.69,
+    "url": "./models/bbg004_zeus__anim_all.glb",
     "bbox": [
      [
       -22.73,
@@ -338,13 +350,12 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
-    "file": "bbg006__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_07",
+    "file": "bbg006.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 5058688,
-    "url": "./models/bbg006__anim_main.glb",
+    "size": 3.86,
+    "url": "./models/bbg006.glb",
     "bbox": [
      [
       -34.17,
@@ -359,12 +370,15 @@
     ]
    },
    {
-    "file": "bbg006.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bbg006__anim_all.glb",
+    "label": "全部动作（3）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.86,
-    "url": "./models/bbg006.glb",
+    "clips": 3,
+    "channels": 1294,
+    "duration": 3.53,
+    "size": 6.35,
+    "url": "./models/bbg006__anim_all.glb",
     "bbox": [
      [
       -34.17,
@@ -385,13 +399,12 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
-    "file": "bbg006_hsta__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_07",
+    "file": "bbg006_hsta.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 5058740,
-    "url": "./models/bbg006_hsta__anim_main.glb",
+    "size": 3.86,
+    "url": "./models/bbg006_hsta.glb",
     "bbox": [
      [
       -34.17,
@@ -406,12 +419,15 @@
     ]
    },
    {
-    "file": "bbg006_hsta.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bbg006_hsta__anim_all.glb",
+    "label": "全部动作（3）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.86,
-    "url": "./models/bbg006_hsta.glb",
+    "clips": 3,
+    "channels": 1294,
+    "duration": 3.53,
+    "size": 6.35,
+    "url": "./models/bbg006_hsta__anim_all.glb",
     "bbox": [
      [
       -34.17,
@@ -432,13 +448,12 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
-    "file": "bbg006_zeus__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_07",
+    "file": "bbg006_zeus.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 5058648,
-    "url": "./models/bbg006_zeus__anim_main.glb",
+    "size": 3.86,
+    "url": "./models/bbg006_zeus.glb",
     "bbox": [
      [
       -34.17,
@@ -453,12 +468,15 @@
     ]
    },
    {
-    "file": "bbg006_zeus.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bbg006_zeus__anim_all.glb",
+    "label": "全部动作（3）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.86,
-    "url": "./models/bbg006_zeus.glb",
+    "clips": 3,
+    "channels": 1294,
+    "duration": 3.53,
+    "size": 6.35,
+    "url": "./models/bbg006_zeus__anim_all.glb",
     "bbox": [
      [
       -34.17,
@@ -479,13 +497,12 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
-    "file": "bbg008_hsta__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "idle_01",
+    "file": "bbg008_hsta.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 13276108,
-    "url": "./models/bbg008_hsta__anim_main.glb",
+    "size": 4.98,
+    "url": "./models/bbg008_hsta.glb",
     "bbox": [
      [
       -89.86,
@@ -500,12 +517,15 @@
     ]
    },
    {
-    "file": "bbg008_hsta.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bbg008_hsta__anim_all.glb",
+    "label": "全部动作（25）",
+    "kind": "anim",
     "phase": "main",
-    "size": 4.98,
-    "url": "./models/bbg008_hsta.glb",
+    "clips": 25,
+    "channels": 29205,
+    "duration": 12.03,
+    "size": 71.9,
+    "url": "./models/bbg008_hsta__anim_all.glb",
     "bbox": [
      [
       -89.86,
@@ -526,13 +546,12 @@
   "camp": "A.N.M.I.",
   "variants": [
    {
-    "file": "bbg009_anmi__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "idle_01",
+    "file": "bbg009_anmi.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 5249924,
-    "url": "./models/bbg009_anmi__anim_main.glb",
+    "size": 2.7,
+    "url": "./models/bbg009_anmi.glb",
     "bbox": [
      [
       -28.61,
@@ -547,12 +566,15 @@
     ]
    },
    {
-    "file": "bbg009_anmi.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "bbg009_anmi__anim_all.glb",
+    "label": "全部动作（41）",
+    "kind": "anim",
     "phase": "main",
-    "size": 2.7,
-    "url": "./models/bbg009_anmi.glb",
+    "clips": 41,
+    "channels": 17268,
+    "duration": 10.9,
+    "size": 43.28,
+    "url": "./models/bbg009_anmi__anim_all.glb",
     "bbox": [
      [
       -28.61,
@@ -625,48 +647,6 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
-    "file": "eba002_hsta__anim_1phase.glb",
-    "label": "1 阶段·动",
-    "kind": "anim",
-    "clip": "1phase_idle-raw",
-    "phase": "1phase",
-    "size": 4224632,
-    "url": "./models/eba002_hsta__anim_1phase.glb",
-    "bbox": [
-     [
-      -15.94,
-      -28.87,
-      -13.73
-     ],
-     [
-      15.94,
-      14.18,
-      17.07
-     ]
-    ]
-   },
-   {
-    "file": "eba002_hsta__anim_2phase.glb",
-    "label": "2 阶段·动",
-    "kind": "anim",
-    "clip": "2phase_idle-raw",
-    "phase": "2phase",
-    "size": 3372836,
-    "url": "./models/eba002_hsta__anim_2phase.glb",
-    "bbox": [
-     [
-      -12.14,
-      -22.64,
-      -9.3
-     ],
-     [
-      12.16,
-      9.94,
-      4.23
-     ]
-    ]
-   },
-   {
     "file": "eba002_hsta__eba002_1phase.glb",
     "label": "1 阶段·静",
     "kind": "static",
@@ -693,6 +673,52 @@
     "phase": "2 阶段",
     "size": 2.61,
     "url": "./models/eba002_hsta__eba002_2phase.glb",
+    "bbox": [
+     [
+      -12.14,
+      -22.64,
+      -9.3
+     ],
+     [
+      12.16,
+      9.94,
+      4.23
+     ]
+    ]
+   },
+   {
+    "file": "eba002_hsta__anim_all_1phase.glb",
+    "label": "1 阶段·全部动作（12）",
+    "kind": "anim",
+    "phase": "1phase",
+    "clips": 12,
+    "channels": 3879,
+    "duration": 8.43,
+    "size": 10.4,
+    "url": "./models/eba002_hsta__anim_all_1phase.glb",
+    "bbox": [
+     [
+      -15.94,
+      -28.87,
+      -13.73
+     ],
+     [
+      15.94,
+      14.18,
+      17.07
+     ]
+    ]
+   },
+   {
+    "file": "eba002_hsta__anim_all_2phase.glb",
+    "label": "2 阶段·全部动作（12）",
+    "kind": "anim",
+    "phase": "2phase",
+    "clips": 12,
+    "channels": 4690,
+    "duration": 6.7,
+    "size": 10.17,
+    "url": "./models/eba002_hsta__anim_all_2phase.glb",
     "bbox": [
      [
       -12.14,
@@ -843,13 +869,12 @@
   "camp": "A.N.M.I.",
   "variants": [
    {
-    "file": "eba004__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "idle_01",
+    "file": "eba004.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 7691552,
-    "url": "./models/eba004__anim_main.glb",
+    "size": 1.94,
+    "url": "./models/eba004.glb",
     "bbox": [
      [
       -20.16,
@@ -864,12 +889,15 @@
     ]
    },
    {
-    "file": "eba004.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "eba004__anim_all.glb",
+    "label": "全部动作（31）",
+    "kind": "anim",
     "phase": "main",
-    "size": 1.94,
-    "url": "./models/eba004.glb",
+    "clips": 31,
+    "channels": 38578,
+    "duration": 13.53,
+    "size": 84.95,
+    "url": "./models/eba004__anim_all.glb",
     "bbox": [
      [
       -20.16,
@@ -890,13 +918,12 @@
   "camp": "D.M.T.R.",
   "variants": [
    {
-    "file": "eba004_dmtr__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "idle_01",
+    "file": "eba004_dmtr.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 7701236,
-    "url": "./models/eba004_dmtr__anim_main.glb",
+    "size": 1.95,
+    "url": "./models/eba004_dmtr.glb",
     "bbox": [
      [
       -20.16,
@@ -911,12 +938,15 @@
     ]
    },
    {
-    "file": "eba004_dmtr.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "eba004_dmtr__anim_all.glb",
+    "label": "全部动作（31）",
+    "kind": "anim",
     "phase": "main",
-    "size": 1.95,
-    "url": "./models/eba004_dmtr.glb",
+    "clips": 31,
+    "channels": 38578,
+    "duration": 13.53,
+    "size": 84.96,
+    "url": "./models/eba004_dmtr__anim_all.glb",
     "bbox": [
      [
       -20.16,
@@ -937,13 +967,12 @@
   "camp": "A.N.M.I.",
   "variants": [
    {
-    "file": "eba005_anmi__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "1phase_idle_01",
+    "file": "eba005_anmi.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 5279620,
-    "url": "./models/eba005_anmi__anim_main.glb",
+    "size": 3.99,
+    "url": "./models/eba005_anmi.glb",
     "bbox": [
      [
       -24.32,
@@ -958,12 +987,15 @@
     ]
    },
    {
-    "file": "eba005_anmi.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "eba005_anmi__anim_all.glb",
+    "label": "全部动作（26）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.99,
-    "url": "./models/eba005_anmi.glb",
+    "clips": 26,
+    "channels": 7116,
+    "duration": 10.2,
+    "size": 18.87,
+    "url": "./models/eba005_anmi__anim_all.glb",
     "bbox": [
      [
       -24.32,
@@ -984,13 +1016,12 @@
   "camp": "",
   "variants": [
    {
-    "file": "ebg001__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_05",
+    "file": "ebg001.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 4831532,
-    "url": "./models/ebg001__anim_main.glb",
+    "size": 3.87,
+    "url": "./models/ebg001.glb",
     "bbox": [
      [
       -26.08,
@@ -1005,12 +1036,15 @@
     ]
    },
    {
-    "file": "ebg001.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "ebg001__anim_all.glb",
+    "label": "全部动作（6）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.87,
-    "url": "./models/ebg001.glb",
+    "clips": 6,
+    "channels": 310,
+    "duration": 3.37,
+    "size": 4.98,
+    "url": "./models/ebg001__anim_all.glb",
     "bbox": [
      [
       -26.08,
@@ -1031,13 +1065,12 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
-    "file": "ebg001_hsta__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_05",
+    "file": "ebg001_hsta.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 4831564,
-    "url": "./models/ebg001_hsta__anim_main.glb",
+    "size": 3.87,
+    "url": "./models/ebg001_hsta.glb",
     "bbox": [
      [
       -26.08,
@@ -1052,12 +1085,15 @@
     ]
    },
    {
-    "file": "ebg001_hsta.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "ebg001_hsta__anim_all.glb",
+    "label": "全部动作（6）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.87,
-    "url": "./models/ebg001_hsta.glb",
+    "clips": 6,
+    "channels": 310,
+    "duration": 3.37,
+    "size": 4.98,
+    "url": "./models/ebg001_hsta__anim_all.glb",
     "bbox": [
      [
       -26.08,
@@ -1182,13 +1218,12 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
-    "file": "mba002__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "（未记录）",
+    "file": "mba002.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 7322888,
-    "url": "./models/mba002__anim_main.glb",
+    "size": 4.87,
+    "url": "./models/mba002.glb",
     "bbox": [
      [
       -61.56,
@@ -1203,12 +1238,15 @@
     ]
    },
    {
-    "file": "mba002.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "mba002__anim_all.glb",
+    "label": "全部动作（6）",
+    "kind": "anim",
     "phase": "main",
-    "size": 4.87,
-    "url": "./models/mba002.glb",
+    "clips": 6,
+    "channels": 3570,
+    "duration": 4.57,
+    "size": 12.31,
+    "url": "./models/mba002__anim_all.glb",
     "bbox": [
      [
       -61.56,
@@ -1229,13 +1267,12 @@
   "camp": "",
   "variants": [
    {
-    "file": "mbg001__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "phase001_skill_loop_04",
+    "file": "mbg001.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 5627904,
-    "url": "./models/mbg001__anim_main.glb",
+    "size": 4.56,
+    "url": "./models/mbg001.glb",
     "bbox": [
      [
       -34.18,
@@ -1250,12 +1287,15 @@
     ]
    },
    {
-    "file": "mbg001.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "mbg001__anim_all.glb",
+    "label": "全部动作（6）",
+    "kind": "anim",
     "phase": "main",
-    "size": 4.56,
-    "url": "./models/mbg001.glb",
+    "clips": 6,
+    "channels": 1868,
+    "duration": 5.03,
+    "size": 8.21,
+    "url": "./models/mbg001__anim_all.glb",
     "bbox": [
      [
       -34.18,
@@ -1276,13 +1316,12 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
-    "file": "mbg001_psid__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "phase001_skill_loop_04",
+    "file": "mbg001_psid.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 5432716,
-    "url": "./models/mbg001_psid__anim_main.glb",
+    "size": 4.37,
+    "url": "./models/mbg001_psid.glb",
     "bbox": [
      [
       -34.18,
@@ -1297,12 +1336,15 @@
     ]
    },
    {
-    "file": "mbg001_psid.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "mbg001_psid__anim_all.glb",
+    "label": "全部动作（6）",
+    "kind": "anim",
     "phase": "main",
-    "size": 4.37,
-    "url": "./models/mbg001_psid.glb",
+    "clips": 6,
+    "channels": 1868,
+    "duration": 5.03,
+    "size": 8.02,
+    "url": "./models/mbg001_psid__anim_all.glb",
     "bbox": [
      [
       -34.18,
@@ -1349,48 +1391,6 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
-    "file": "mbg003_psid__anim_1phase.glb",
-    "label": "1 阶段·动",
-    "kind": "anim",
-    "clip": "1phase_idle",
-    "phase": "1phase",
-    "size": 5613580,
-    "url": "./models/mbg003_psid__anim_1phase.glb",
-    "bbox": [
-     [
-      -40.39,
-      -0.73,
-      -12.77
-     ],
-     [
-      40.39,
-      41.54,
-      12.77
-     ]
-    ]
-   },
-   {
-    "file": "mbg003_psid__anim_2phase.glb",
-    "label": "2 阶段·动",
-    "kind": "anim",
-    "clip": "2phase_idle",
-    "phase": "2phase",
-    "size": 5976012,
-    "url": "./models/mbg003_psid__anim_2phase.glb",
-    "bbox": [
-     [
-      -11.3,
-      -5.76,
-      -16.61
-     ],
-     [
-      11.3,
-      19.51,
-      24.16
-     ]
-    ]
-   },
-   {
     "file": "mbg003_psid__mbg003_1phase.glb",
     "label": "1 阶段·静",
     "kind": "static",
@@ -1429,6 +1429,52 @@
       24.16
      ]
     ]
+   },
+   {
+    "file": "mbg003_psid__anim_all_1phase.glb",
+    "label": "1 阶段·全部动作（1）",
+    "kind": "anim",
+    "phase": "1phase",
+    "clips": 1,
+    "channels": 441,
+    "duration": 4.47,
+    "size": 5.35,
+    "url": "./models/mbg003_psid__anim_all_1phase.glb",
+    "bbox": [
+     [
+      -40.39,
+      -0.73,
+      -12.77
+     ],
+     [
+      40.39,
+      41.54,
+      12.77
+     ]
+    ]
+   },
+   {
+    "file": "mbg003_psid__anim_all_2phase.glb",
+    "label": "2 阶段·全部动作（25）",
+    "kind": "anim",
+    "phase": "2phase",
+    "clips": 25,
+    "channels": 5608,
+    "duration": 8.2,
+    "size": 13.64,
+    "url": "./models/mbg003_psid__anim_all_2phase.glb",
+    "bbox": [
+     [
+      -11.3,
+      -5.76,
+      -16.61
+     ],
+     [
+      11.3,
+      19.51,
+      24.16
+     ]
+    ]
    }
   ]
  },
@@ -1437,13 +1483,12 @@
   "camp": "",
   "variants": [
    {
-    "file": "mbg004__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_03",
+    "file": "mbg004.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 3606660,
-    "url": "./models/mbg004__anim_main.glb",
+    "size": 3.1,
+    "url": "./models/mbg004.glb",
     "bbox": [
      [
       -9.99,
@@ -1458,12 +1503,15 @@
     ]
    },
    {
-    "file": "mbg004.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "mbg004__anim_all.glb",
+    "label": "全部动作（3）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.1,
-    "url": "./models/mbg004.glb",
+    "clips": 3,
+    "channels": 163,
+    "duration": 3.0,
+    "size": 3.66,
+    "url": "./models/mbg004__anim_all.glb",
     "bbox": [
      [
       -9.99,
@@ -1484,13 +1532,12 @@
   "camp": "A.N.M.I.",
   "variants": [
    {
-    "file": "mbg004_anmi__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "skill_loop_03",
+    "file": "mbg004_anmi.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 4141860,
-    "url": "./models/mbg004_anmi__anim_main.glb",
+    "size": 3.34,
+    "url": "./models/mbg004_anmi.glb",
     "bbox": [
      [
       -11.02,
@@ -1505,12 +1552,15 @@
     ]
    },
    {
-    "file": "mbg004_anmi.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "mbg004_anmi__anim_all.glb",
+    "label": "全部动作（3）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.34,
-    "url": "./models/mbg004_anmi.glb",
+    "clips": 3,
+    "channels": 163,
+    "duration": 3.0,
+    "size": 4.17,
+    "url": "./models/mbg004_anmi__anim_all.glb",
     "bbox": [
      [
       -11.02,
@@ -1557,13 +1607,12 @@
   "camp": "D.M.T.R.",
   "variants": [
    {
-    "file": "xba002_dmtr__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "idle_01",
+    "file": "xba002_dmtr.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 4521336,
-    "url": "./models/xba002_dmtr__anim_main.glb",
+    "size": 3.43,
+    "url": "./models/xba002_dmtr.glb",
     "bbox": [
      [
       -27.03,
@@ -1578,12 +1627,15 @@
     ]
    },
    {
-    "file": "xba002_dmtr.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "xba002_dmtr__anim_all.glb",
+    "label": "全部动作（18）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.43,
-    "url": "./models/xba002_dmtr.glb",
+    "clips": 18,
+    "channels": 4564,
+    "duration": 12.7,
+    "size": 13.2,
+    "url": "./models/xba002_dmtr__anim_all.glb",
     "bbox": [
      [
       -27.03,
@@ -1603,48 +1655,6 @@
   "name": "安尼希利奥 [D.M.T.R.]",
   "camp": "D.M.T.R.",
   "variants": [
-   {
-    "file": "xba003_dmtr__anim_1phase.glb",
-    "label": "1 阶段·动",
-    "kind": "anim",
-    "clip": "1phase_idle-raw",
-    "phase": "1phase",
-    "size": 1902996,
-    "url": "./models/xba003_dmtr__anim_1phase.glb",
-    "bbox": [
-     [
-      -9.13,
-      -12.53,
-      -7.68
-     ],
-     [
-      9.19,
-      27.84,
-      9.73
-     ]
-    ]
-   },
-   {
-    "file": "xba003_dmtr__anim_2phase.glb",
-    "label": "2 阶段·动",
-    "kind": "anim",
-    "clip": "2phase_idle-raw",
-    "phase": "2phase",
-    "size": 5654824,
-    "url": "./models/xba003_dmtr__anim_2phase.glb",
-    "bbox": [
-     [
-      -14.65,
-      -12.31,
-      -6.43
-     ],
-     [
-      14.59,
-      26.71,
-      12.46
-     ]
-    ]
-   },
    {
     "file": "xba003_dmtr__xba003_1phase.glb",
     "label": "1 阶段·静",
@@ -1684,6 +1694,52 @@
       12.46
      ]
     ]
+   },
+   {
+    "file": "xba003_dmtr__anim_all_1phase.glb",
+    "label": "1 阶段·全部动作（2）",
+    "kind": "anim",
+    "phase": "1phase",
+    "clips": 2,
+    "channels": 150,
+    "duration": 4.77,
+    "size": 1.91,
+    "url": "./models/xba003_dmtr__anim_all_1phase.glb",
+    "bbox": [
+     [
+      -9.13,
+      -12.53,
+      -7.68
+     ],
+     [
+      9.19,
+      27.84,
+      9.73
+     ]
+    ]
+   },
+   {
+    "file": "xba003_dmtr__anim_all_2phase.glb",
+    "label": "2 阶段·全部动作（14）",
+    "kind": "anim",
+    "phase": "2phase",
+    "clips": 14,
+    "channels": 3171,
+    "duration": 3.37,
+    "size": 9.11,
+    "url": "./models/xba003_dmtr__anim_all_2phase.glb",
+    "bbox": [
+     [
+      -14.65,
+      -12.31,
+      -6.43
+     ],
+     [
+      14.59,
+      26.71,
+      12.46
+     ]
+    ]
    }
   ]
  },
@@ -1692,13 +1748,12 @@
   "camp": "D.M.T.R.",
   "variants": [
    {
-    "file": "xba004_dmtr__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "idle_on_01-raw",
+    "file": "xba004_dmtr.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 5066424,
-    "url": "./models/xba004_dmtr__anim_main.glb",
+    "size": 3.04,
+    "url": "./models/xba004_dmtr.glb",
     "bbox": [
      [
       -33.15,
@@ -1713,12 +1768,15 @@
     ]
    },
    {
-    "file": "xba004_dmtr.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "xba004_dmtr__anim_all.glb",
+    "label": "全部动作（18）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.04,
-    "url": "./models/xba004_dmtr.glb",
+    "clips": 18,
+    "channels": 14661,
+    "duration": 3.7,
+    "size": 22.71,
+    "url": "./models/xba004_dmtr__anim_all.glb",
     "bbox": [
      [
       -33.15,
@@ -1757,6 +1815,29 @@
       11.43
      ]
     ]
+   },
+   {
+    "file": "xbg001_anmi__anim_all.glb",
+    "label": "全部动作（6）",
+    "kind": "anim",
+    "phase": "main",
+    "clips": 6,
+    "channels": 1889,
+    "duration": 4.03,
+    "size": 7.35,
+    "url": "./models/xbg001_anmi__anim_all.glb",
+    "bbox": [
+     [
+      -20.65,
+      -9.04,
+      -13.45
+     ],
+     [
+      20.65,
+      20.67,
+      11.43
+     ]
+    ]
    }
   ]
  },
@@ -1783,6 +1864,29 @@
       11.43
      ]
     ]
+   },
+   {
+    "file": "xbg001_psid__anim_all.glb",
+    "label": "全部动作（6）",
+    "kind": "anim",
+    "phase": "main",
+    "clips": 6,
+    "channels": 1889,
+    "duration": 4.03,
+    "size": 7.33,
+    "url": "./models/xbg001_psid__anim_all.glb",
+    "bbox": [
+     [
+      -20.65,
+      -2.66,
+      -13.45
+     ],
+     [
+      20.65,
+      20.67,
+      11.43
+     ]
+    ]
    }
   ]
  },
@@ -1791,13 +1895,12 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
-    "file": "xbg002_zeus__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "idle_01",
+    "file": "xbg002_zeus.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 11736024,
-    "url": "./models/xbg002_zeus__anim_main.glb",
+    "size": 8.12,
+    "url": "./models/xbg002_zeus.glb",
     "bbox": [
      [
       -8.41,
@@ -1812,12 +1915,15 @@
     ]
    },
    {
-    "file": "xbg002_zeus.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "xbg002_zeus__anim_all.glb",
+    "label": "全部动作（26）",
+    "kind": "anim",
     "phase": "main",
-    "size": 8.12,
-    "url": "./models/xbg002_zeus.glb",
+    "clips": 26,
+    "channels": 2409,
+    "duration": 12.03,
+    "size": 16.34,
+    "url": "./models/xbg002_zeus__anim_all.glb",
     "bbox": [
      [
       -8.41,
@@ -1838,13 +1944,12 @@
   "camp": "H.S.T.A.",
   "variants": [
    {
-    "file": "xbg003_hsta__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "idle_1phase",
+    "file": "xbg003_hsta.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 5858308,
-    "url": "./models/xbg003_hsta__anim_main.glb",
+    "size": 4.76,
+    "url": "./models/xbg003_hsta.glb",
     "bbox": [
      [
       -30.77,
@@ -1859,12 +1964,15 @@
     ]
    },
    {
-    "file": "xbg003_hsta.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "xbg003_hsta__anim_all.glb",
+    "label": "全部动作（42）",
+    "kind": "anim",
     "phase": "main",
-    "size": 4.76,
-    "url": "./models/xbg003_hsta.glb",
+    "clips": 42,
+    "channels": 11428,
+    "duration": 10.03,
+    "size": 22.91,
+    "url": "./models/xbg003_hsta__anim_all.glb",
     "bbox": [
      [
       -30.77,
@@ -1885,13 +1993,12 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
-    "file": "xbg004_psid__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "idle_01",
+    "file": "xbg004_psid.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 6054488,
-    "url": "./models/xbg004_psid__anim_main.glb",
+    "size": 4.1,
+    "url": "./models/xbg004_psid.glb",
     "bbox": [
      [
       -15.07,
@@ -1906,12 +2013,15 @@
     ]
    },
    {
-    "file": "xbg004_psid.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "xbg004_psid__anim_all.glb",
+    "label": "全部动作（19）",
+    "kind": "anim",
     "phase": "main",
-    "size": 4.1,
-    "url": "./models/xbg004_psid.glb",
+    "clips": 19,
+    "channels": 5518,
+    "duration": 10.33,
+    "size": 17.23,
+    "url": "./models/xbg004_psid__anim_all.glb",
     "bbox": [
      [
       -15.07,
@@ -1932,13 +2042,12 @@
   "camp": "Z.E.U.S.",
   "variants": [
    {
-    "file": "xbg004_zeus__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "idle_01",
+    "file": "xbg004_zeus.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 6057348,
-    "url": "./models/xbg004_zeus__anim_main.glb",
+    "size": 4.1,
+    "url": "./models/xbg004_zeus.glb",
     "bbox": [
      [
       -15.07,
@@ -1953,12 +2062,15 @@
     ]
    },
    {
-    "file": "xbg004_zeus.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "xbg004_zeus__anim_all.glb",
+    "label": "全部动作（19）",
+    "kind": "anim",
     "phase": "main",
-    "size": 4.1,
-    "url": "./models/xbg004_zeus.glb",
+    "clips": 19,
+    "channels": 5518,
+    "duration": 10.33,
+    "size": 17.24,
+    "url": "./models/xbg004_zeus__anim_all.glb",
     "bbox": [
      [
       -15.07,
@@ -1979,13 +2091,12 @@
   "camp": "P.S.I.D.",
   "variants": [
    {
-    "file": "xbg005_psid__anim_main.glb",
-    "label": "动态",
-    "kind": "anim",
-    "clip": "1phase_idle_01",
+    "file": "xbg005_psid.glb",
+    "label": "静态",
+    "kind": "static",
     "phase": "main",
-    "size": 4040788,
-    "url": "./models/xbg005_psid__anim_main.glb",
+    "size": 3.14,
+    "url": "./models/xbg005_psid.glb",
     "bbox": [
      [
       -27.41,
@@ -2000,12 +2111,15 @@
     ]
    },
    {
-    "file": "xbg005_psid.glb",
-    "label": "静态",
-    "kind": "static",
+    "file": "xbg005_psid__anim_all.glb",
+    "label": "全部动作（49）",
+    "kind": "anim",
     "phase": "main",
-    "size": 3.14,
-    "url": "./models/xbg005_psid.glb",
+    "clips": 49,
+    "channels": 6415,
+    "duration": 9.53,
+    "size": 12.76,
+    "url": "./models/xbg005_psid__anim_all.glb",
     "bbox": [
      [
       -27.41,
@@ -2025,48 +2139,6 @@
   "name": "胜利女神",
   "camp": "A.N.M.I.",
   "variants": [
-   {
-    "file": "xbg006_anmi__anim_1phase.glb",
-    "label": "1 阶段·动",
-    "kind": "anim",
-    "clip": "1phase_idle-raw",
-    "phase": "1phase",
-    "size": 2338688,
-    "url": "./models/xbg006_anmi__anim_1phase.glb",
-    "bbox": [
-     [
-      -96.89,
-      -8.16,
-      -50.98
-     ],
-     [
-      96.89,
-      222.07,
-      98.26
-     ]
-    ]
-   },
-   {
-    "file": "xbg006_anmi__anim_2phase.glb",
-    "label": "2 阶段·动",
-    "kind": "anim",
-    "clip": "2phase_idle-raw",
-    "phase": "2phase",
-    "size": 5170628,
-    "url": "./models/xbg006_anmi__anim_2phase.glb",
-    "bbox": [
-     [
-      -33.4,
-      -2.62,
-      -17.68
-     ],
-     [
-      24.76,
-      38.75,
-      20.17
-     ]
-    ]
-   },
    {
     "file": "xbg006_anmi__xbg006_1phase.glb",
     "label": "1 阶段·静",
@@ -2094,6 +2166,52 @@
     "phase": "2 阶段",
     "size": 4.18,
     "url": "./models/xbg006_anmi__xbg006_2phase.glb",
+    "bbox": [
+     [
+      -33.4,
+      -2.62,
+      -17.68
+     ],
+     [
+      24.76,
+      38.75,
+      20.17
+     ]
+    ]
+   },
+   {
+    "file": "xbg006_anmi__anim_all_1phase.glb",
+    "label": "1 阶段·全部动作（14）",
+    "kind": "anim",
+    "phase": "1phase",
+    "clips": 14,
+    "channels": 708,
+    "duration": 13.63,
+    "size": 3.34,
+    "url": "./models/xbg006_anmi__anim_all_1phase.glb",
+    "bbox": [
+     [
+      -96.89,
+      -8.16,
+      -50.98
+     ],
+     [
+      96.89,
+      222.07,
+      98.26
+     ]
+    ]
+   },
+   {
+    "file": "xbg006_anmi__anim_all_2phase.glb",
+    "label": "2 阶段·全部动作（16）",
+    "kind": "anim",
+    "phase": "2phase",
+    "clips": 16,
+    "channels": 4516,
+    "duration": 4.37,
+    "size": 10.92,
+    "url": "./models/xbg006_anmi__anim_all_2phase.glb",
     "bbox": [
      [
       -33.4,

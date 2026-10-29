@@ -110,6 +110,7 @@
   <div class="grp">
     <label>动画</label>
     <button id="play" style="width:100%">▶ 播放动作</button>
+    <select id="clipSel" style="width:100%;margin-top:6px;display:none"></select>
     <div class="row"><span style="color:var(--dim);font-size:11px">速度</span>
       <input id="speed" type="range" min="0" max="200" value="100">
       <span class="val" id="speedV">1.0×</span></div>
@@ -222,6 +223,8 @@ const state = {
   glb:QS.get('glb')||null, title:QS.get('title')||null,
   zoom:QS.get('zoom')?parseFloat(QS.get('zoom')):null,
   seek:QS.has('t')?parseFloat(QS.get('t')):null,
+  // 一个 glb 可以装多条 animation，?clip= 支持序号(1起)或 clip 名
+  clipIdx:0, clipName:QS.get('clip')||null,
 };
 // ui=0：隐藏左侧面板与状态栏，只留模型，方便截图
 if(QS.get('ui')==='0') document.documentElement.classList.add('noui');
@@ -257,7 +260,7 @@ const d1 = new THREE.DirectionalLight(0xffffff, 1.6); d1.position.set(1, 2, 3); 
 const d2 = new THREE.DirectionalLight(0x88aaff, 0.7); d2.position.set(-2, -1, -2); scene.add(d2);
 
 const loader = new GLTFLoader();
-let root = null, mixer = null, action = null, clipLen = 0, box = null, homePos = null, homeTarget = null;
+let root = null, mixer = null, action = null, clipLen = 0, clips = [], box = null, homePos = null, homeTarget = null;
 
 function setStatus(t){ document.getElementById('status').textContent = t; }
 
@@ -409,17 +412,27 @@ function load(){
 
     // 动画
     if(mixer){ mixer.stopAllAction(); mixer = null; action = null; }
-    if(gltf.animations && gltf.animations.length){
+    clips = (gltf.animations || []).slice();
+    const sel = document.getElementById('clipSel');
+    if(clips.length){
       mixer = new THREE.AnimationMixer(root);
-      action = mixer.clipAction(gltf.animations[0]);
-      action.setLoop(THREE.LoopRepeat);
-      clipLen = gltf.animations[0].duration;
-      const nF = gltf.animations[0].tracks.length ? Math.round(clipLen*30)+1 : 0;
-      root.userData.frames = nF;
-      if(state.playing) action.play();
+      sel.innerHTML = clips.map((c,i)=>
+        `<option value="${i}">${i+1}. ${c.name.replace(/^.*__/,'')}</option>`).join('');
+      sel.style.display = clips.length > 1 ? 'block' : 'none';
+      if(state.clipName){
+        const k = clips.findIndex(c=>c.name===state.clipName ||
+                                    c.name.endsWith('__'+state.clipName));
+        if(k >= 0) state.clipIdx = k;
+        else if(/^\d+$/.test(state.clipName)) state.clipIdx = parseInt(state.clipName,10)-1;
+      }
+      state.clipIdx = Math.min(Math.max(state.clipIdx||0, 0), clips.length-1);
+      sel.value = state.clipIdx;
+      applyClip(state.clipIdx);
       document.getElementById('play').disabled = false;
     } else {
       clipLen = 0;
+      sel.style.display = 'none';
+      sel.innerHTML = '';
       document.getElementById('play').disabled = true;
       state.playing = false;
       document.getElementById('play').classList.remove('on');
@@ -438,6 +451,27 @@ function load(){
     setStatus('加载失败：' + err.message);
     console.error(err);
   });
+}
+
+// 切到第 i 条动画（一个 glb 可以装多条：全 clip 合并导出后每型号有 3~49 条）
+function applyClip(i){
+  if(!mixer || !clips.length) return null;
+  i = Math.max(0, Math.min(i, clips.length-1));
+  const c = clips[i];
+  mixer.stopAllAction();
+  action = mixer.clipAction(c);
+  action.setLoop(THREE.LoopRepeat);
+  action.clampWhenFinished = false;
+  action.timeScale = state.speed;
+  clipLen = c.duration || 0;
+  root.userData.frames = c.tracks.length ? Math.round(clipLen*30)+1 : 0;
+  state.clipIdx = i;
+  if(window.__nkas){
+    window.__nkas.clipLen = clipLen;
+    window.__nkas.clipName = c.name;
+    window.__nkas.clipCount = clips.length;
+  }
+  return c.name;
 }
 
 // 把 UI 与 state 对齐（含 URL 参数指定的初始状态）
@@ -599,6 +633,13 @@ document.getElementById('speed').oninput = (e)=>{
   state.speed = e.target.value/100;
   document.getElementById('speedV').textContent = state.speed.toFixed(1)+'×';
   if(action) action.timeScale = state.speed;
+};
+
+document.getElementById('clipSel').onchange = (e)=>{
+  const name = applyClip(+e.target.value);
+  state.seek = null;
+  syncUI();
+  if(name) setStatus(`动作：${name} · ${clipLen.toFixed(2)}s · 共 ${clips.length} 条`);
 };
 
 document.getElementById('autorot').onclick = (e)=>{
