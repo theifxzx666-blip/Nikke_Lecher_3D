@@ -29,9 +29,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 6,
-    "channels": 995,
+    "channels": 1227,
     "duration": 3.87,
-    "size": 4.8,
+    "size": 4.39,
     "url": "./models/bba001__anim_all.glb",
     "bbox": [
      [
@@ -78,9 +78,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 6,
-    "channels": 995,
+    "channels": 1227,
     "duration": 3.87,
-    "size": 4.8,
+    "size": 4.39,
     "url": "./models/bba001_zeus__anim_all.glb",
     "bbox": [
      [
@@ -127,9 +127,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 5,
-    "channels": 532,
+    "channels": 655,
     "duration": 2.7,
-    "size": 4.19,
+    "size": 4.07,
     "url": "./models/bbg001__anim_all.glb",
     "bbox": [
      [
@@ -228,9 +228,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 3,
-    "channels": 1274,
+    "channels": 1509,
     "duration": 3.37,
-    "size": 7.71,
+    "size": 6.68,
     "url": "./models/bbg004_dmtr__anim_all.glb",
     "bbox": [
      [
@@ -277,9 +277,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 3,
-    "channels": 1274,
+    "channels": 1509,
     "duration": 3.37,
-    "size": 7.69,
+    "size": 6.66,
     "url": "./models/bbg004_psid__anim_all.glb",
     "bbox": [
      [
@@ -326,9 +326,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 3,
-    "channels": 1274,
+    "channels": 1509,
     "duration": 3.37,
-    "size": 7.69,
+    "size": 6.66,
     "url": "./models/bbg004_zeus__anim_all.glb",
     "bbox": [
      [
@@ -375,9 +375,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 3,
-    "channels": 1294,
+    "channels": 1768,
     "duration": 3.53,
-    "size": 6.35,
+    "size": 5.92,
     "url": "./models/bbg006__anim_all.glb",
     "bbox": [
      [
@@ -424,9 +424,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 3,
-    "channels": 1294,
+    "channels": 1768,
     "duration": 3.53,
-    "size": 6.35,
+    "size": 5.92,
     "url": "./models/bbg006_hsta__anim_all.glb",
     "bbox": [
      [
@@ -473,9 +473,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 3,
-    "channels": 1294,
+    "channels": 1768,
     "duration": 3.53,
-    "size": 6.35,
+    "size": 5.92,
     "url": "./models/bbg006_zeus__anim_all.glb",
     "bbox": [
      [
@@ -518,13 +518,13 @@
    },
    {
     "file": "bbg008_hsta__anim_all.glb",
-    "label": "全部动作（25）",
+    "label": "全部动作（27）",
     "kind": "anim",
     "phase": "main",
-    "clips": 25,
-    "channels": 29205,
+    "clips": 27,
+    "channels": 38295,
     "duration": 12.03,
-    "size": 71.9,
+    "size": 57.5,
     "url": "./models/bbg008_hsta__anim_all.glb",
     "bbox": [
      [
@@ -571,9 +571,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 41,
-    "channels": 17268,
+    "channels": 32313,
     "duration": 10.9,
-    "size": 43.28,
+    "size": 35.71,
     "url": "./models/bbg009_anmi__anim_all.glb",
     "bbox": [
      [
@@ -692,9 +692,9 @@
     "kind": "anim",
     "phase": "1phase",
     "clips": 12,
-    "channels": 3879,
+    "channels": 5509,
     "duration": 8.43,
-    "size": 10.4,
+    "size": 7.51,
     "url": "./models/eba002_hsta__anim_all_1phase.glb",
     "bbox": [
      [
@@ -715,9 +715,9 @@
     "kind": "anim",
     "phase": "2phase",
     "clips": 12,
-    "channels": 4690,
+    "channels": 5747,
     "duration": 6.7,
-    "size": 10.17,
+    "size": 6.84,
     "url": "./models/eba002_hsta__anim_all_2phase.glb",
     "bbox": [
      [
@@ -894,9 +894,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 31,
-    "channels": 38578,
+    "channels": 53952,
     "duration": 13.53,
-    "size": 84.95,
+    "size": 39.77,
     "url": "./models/eba004__anim_all.glb",
     "bbox": [
      [
@@ -943,9 +943,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 31,
-    "channels": 38578,
+    "channels": 53952,
     "duration": 13.53,
-    "size": 84.96,
+    "size": 39.78,
     "url": "./models/eba004_dmtr__anim_all.glb",
     "bbox": [
      [
@@ -992,9 +992,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 26,
-    "channels": 7116,
+    "channels": 11171,
     "duration": 10.2,
-    "size": 18.87,
+    "size": 14.08,
     "url": "./models/eba005_anmi__anim_all.glb",
     "bbox": [
      [
@@ -1037,13 +1037,13 @@
    },
    {
     "file": "ebg001__anim_all.glb",
-    "label": "全部动作（6）",
+    "label": "全部动作（8）",
     "kind": "anim",
     "phase": "main",
-    "clips": 6,
-    "channels": 310,
+    "clips": 8,
+    "channels": 1614,
     "duration": 3.37,
-    "size": 4.98,
+    "size": 5.38,
     "url": "./models/ebg001__anim_all.glb",
     "bbox": [
      [
@@ -1086,13 +1086,13 @@
    },
    {
     "file": "ebg001_hsta__anim_all.glb",
-    "label": "全部动作（6）",
+    "label": "全部动作（8）",
     "kind": "anim",
     "phase": "main",
-    "clips": 6,
-    "channels": 310,
+    "clips": 8,
+    "channels": 1614,
     "duration": 3.37,
-    "size": 4.98,
+    "size": 5.38,
     "url": "./models/ebg001_hsta__anim_all.glb",
     "bbox": [
      [
@@ -1243,9 +1243,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 6,
-    "channels": 3570,
+    "channels": 4863,
     "duration": 4.57,
-    "size": 12.31,
+    "size": 10.08,
     "url": "./models/mba002__anim_all.glb",
     "bbox": [
      [
@@ -1292,9 +1292,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 6,
-    "channels": 1868,
+    "channels": 2520,
     "duration": 5.03,
-    "size": 8.21,
+    "size": 7.86,
     "url": "./models/mbg001__anim_all.glb",
     "bbox": [
      [
@@ -1341,9 +1341,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 6,
-    "channels": 1868,
+    "channels": 2520,
     "duration": 5.03,
-    "size": 8.02,
+    "size": 7.67,
     "url": "./models/mbg001_psid__anim_all.glb",
     "bbox": [
      [
@@ -1436,9 +1436,9 @@
     "kind": "anim",
     "phase": "1phase",
     "clips": 1,
-    "channels": 441,
+    "channels": 570,
     "duration": 4.47,
-    "size": 5.35,
+    "size": 5.06,
     "url": "./models/mbg003_psid__anim_all_1phase.glb",
     "bbox": [
      [
@@ -1455,13 +1455,13 @@
    },
    {
     "file": "mbg003_psid__anim_all_2phase.glb",
-    "label": "2 阶段·全部动作（25）",
+    "label": "2 阶段·全部动作（26）",
     "kind": "anim",
     "phase": "2phase",
-    "clips": 25,
-    "channels": 5608,
+    "clips": 26,
+    "channels": 7012,
     "duration": 8.2,
-    "size": 13.64,
+    "size": 11.47,
     "url": "./models/mbg003_psid__anim_all_2phase.glb",
     "bbox": [
      [
@@ -1508,9 +1508,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 3,
-    "channels": 163,
+    "channels": 253,
     "duration": 3.0,
-    "size": 3.66,
+    "size": 3.62,
     "url": "./models/mbg004__anim_all.glb",
     "bbox": [
      [
@@ -1557,9 +1557,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 3,
-    "channels": 163,
+    "channels": 253,
     "duration": 3.0,
-    "size": 4.17,
+    "size": 4.14,
     "url": "./models/mbg004_anmi__anim_all.glb",
     "bbox": [
      [
@@ -1632,9 +1632,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 18,
-    "channels": 4564,
+    "channels": 7715,
     "duration": 12.7,
-    "size": 13.2,
+    "size": 9.65,
     "url": "./models/xba002_dmtr__anim_all.glb",
     "bbox": [
      [
@@ -1701,9 +1701,9 @@
     "kind": "anim",
     "phase": "1phase",
     "clips": 2,
-    "channels": 150,
+    "channels": 207,
     "duration": 4.77,
-    "size": 1.91,
+    "size": 1.8,
     "url": "./models/xba003_dmtr__anim_all_1phase.glb",
     "bbox": [
      [
@@ -1724,9 +1724,9 @@
     "kind": "anim",
     "phase": "2phase",
     "clips": 14,
-    "channels": 3171,
+    "channels": 4098,
     "duration": 3.37,
-    "size": 9.11,
+    "size": 7.76,
     "url": "./models/xba003_dmtr__anim_all_2phase.glb",
     "bbox": [
      [
@@ -1773,9 +1773,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 18,
-    "channels": 14661,
+    "channels": 17397,
     "duration": 3.7,
-    "size": 22.71,
+    "size": 19.43,
     "url": "./models/xba004_dmtr__anim_all.glb",
     "bbox": [
      [
@@ -1818,13 +1818,13 @@
    },
    {
     "file": "xbg001_anmi__anim_all.glb",
-    "label": "全部动作（6）",
+    "label": "全部动作（9）",
     "kind": "anim",
     "phase": "main",
-    "clips": 6,
-    "channels": 1889,
-    "duration": 4.03,
-    "size": 7.35,
+    "clips": 9,
+    "channels": 5696,
+    "duration": 6.1,
+    "size": 10.97,
     "url": "./models/xbg001_anmi__anim_all.glb",
     "bbox": [
      [
@@ -1867,13 +1867,13 @@
    },
    {
     "file": "xbg001_psid__anim_all.glb",
-    "label": "全部动作（6）",
+    "label": "全部动作（9）",
     "kind": "anim",
     "phase": "main",
-    "clips": 6,
-    "channels": 1889,
-    "duration": 4.03,
-    "size": 7.33,
+    "clips": 9,
+    "channels": 5696,
+    "duration": 6.1,
+    "size": 10.95,
     "url": "./models/xbg001_psid__anim_all.glb",
     "bbox": [
      [
@@ -1916,13 +1916,13 @@
    },
    {
     "file": "xbg002_zeus__anim_all.glb",
-    "label": "全部动作（26）",
+    "label": "全部动作（29）",
     "kind": "anim",
     "phase": "main",
-    "clips": 26,
-    "channels": 2409,
+    "clips": 29,
+    "channels": 3383,
     "duration": 12.03,
-    "size": 16.34,
+    "size": 12.49,
     "url": "./models/xbg002_zeus__anim_all.glb",
     "bbox": [
      [
@@ -1969,9 +1969,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 42,
-    "channels": 11428,
+    "channels": 17541,
     "duration": 10.03,
-    "size": 22.91,
+    "size": 18.71,
     "url": "./models/xbg003_hsta__anim_all.glb",
     "bbox": [
      [
@@ -2014,13 +2014,13 @@
    },
    {
     "file": "xbg004_psid__anim_all.glb",
-    "label": "全部动作（19）",
+    "label": "全部动作（21）",
     "kind": "anim",
     "phase": "main",
-    "clips": 19,
-    "channels": 5518,
+    "clips": 21,
+    "channels": 9208,
     "duration": 10.33,
-    "size": 17.23,
+    "size": 12.13,
     "url": "./models/xbg004_psid__anim_all.glb",
     "bbox": [
      [
@@ -2063,13 +2063,13 @@
    },
    {
     "file": "xbg004_zeus__anim_all.glb",
-    "label": "全部动作（19）",
+    "label": "全部动作（21）",
     "kind": "anim",
     "phase": "main",
-    "clips": 19,
-    "channels": 5518,
+    "clips": 21,
+    "channels": 9208,
     "duration": 10.33,
-    "size": 17.24,
+    "size": 12.13,
     "url": "./models/xbg004_zeus__anim_all.glb",
     "bbox": [
      [
@@ -2116,9 +2116,9 @@
     "kind": "anim",
     "phase": "main",
     "clips": 49,
-    "channels": 6415,
+    "channels": 9950,
     "duration": 9.53,
-    "size": 12.76,
+    "size": 11.19,
     "url": "./models/xbg005_psid__anim_all.glb",
     "bbox": [
      [
@@ -2185,9 +2185,9 @@
     "kind": "anim",
     "phase": "1phase",
     "clips": 14,
-    "channels": 708,
+    "channels": 1635,
     "duration": 13.63,
-    "size": 3.34,
+    "size": 3.48,
     "url": "./models/xbg006_anmi__anim_all_1phase.glb",
     "bbox": [
      [
@@ -2208,9 +2208,9 @@
     "kind": "anim",
     "phase": "2phase",
     "clips": 16,
-    "channels": 4516,
+    "channels": 6358,
     "duration": 4.37,
-    "size": 10.92,
+    "size": 8.45,
     "url": "./models/xbg006_anmi__anim_all_2phase.glb",
     "bbox": [
      [
